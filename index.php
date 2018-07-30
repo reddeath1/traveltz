@@ -4,8 +4,6 @@ $db = $db["path"] = ltrim($db["path"], "/");
 
 echo "data...";
 print_r($db);
-
-kfdhdjkfgkhdkfjld
 ?>
 
 <h1>HELLO WORLD</h1>
