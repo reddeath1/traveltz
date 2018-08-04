@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS klmexpre_traveltz;
+/*CREATE DATABASE IF NOT EXISTS klmexpre_traveltz;
 
-USE klmexpre_traveltz;
+USE klmexpre_traveltz;*/
 
 CREATE TABLE IF NOT EXISTS company (
     id int(11) auto_increment NOT NULL,
