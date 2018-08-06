@@ -1,0 +1,6 @@
+Options -Indexes
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_]+|)/([^/]+)?$ index.php?action=$1&q=$2 [L,QSA]
