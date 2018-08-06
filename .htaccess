@@ -4,3 +4,11 @@ Options +FollowSymLinks -MultiViews
 RewriteEngine On
 
 RewriteRule ^([a-zA-Z0-9_]+|)/([^/]+)?$ index.php?action=$1&q=$2 [L,QSA]
+
+RewriteRule 404 view/errors/404.php
+
+RewriteRule 403 view/errors/403.php
+
+ErrorDocument 404 http://localhost/traveltz/404
+
+ErrorDocument 403 http://localhost/traveltz/403
