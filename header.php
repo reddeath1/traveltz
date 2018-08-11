@@ -29,7 +29,3 @@ include_once('head.php');
         </ul>
     </div>
 </nav>
-
-
-
-<!--The Banner starts here-->
