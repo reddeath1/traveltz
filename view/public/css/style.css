@@ -1,3 +1,7 @@
-.hero{
+.hero {
     background-image: url(../images/hero.jpg);
+    height: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0;
 }
