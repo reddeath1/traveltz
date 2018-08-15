@@ -1,5 +1,6 @@
 .hero {
     background-image: url(../images/hero.jpg);
+    background-color: red;
     height: 100%;
     height: auto;
     min-height: 100%;

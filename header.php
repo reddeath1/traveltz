@@ -2,8 +2,6 @@
 include_once('head.php');
 ?>
 
-
-
 <!--Navigation Bar Starts Here-->
 <nav class="navbar navbar-expand-sm">
 
