@@ -35,7 +35,7 @@
 					<div class="input-group mb-3">
 						<input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
 						<div class="input-group-append">
-							<button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+							<button class="btn btn-outline-secondary btn-banner" type="button" id="button-addon2">Subscribe</button>
 						</div>
 					</div>
 				</div>
