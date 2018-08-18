@@ -49,7 +49,7 @@
 				<div class="col-lg-8">
 					<p>&copy; 2018 Travel TZ Today <span class="vertical-divider">|</span> <span style="color: #6c6c6f;">Developed &amp; Maintained by <a href="http://www.khakidevelopers.com/" target="_blank" style="color: #fff">Khaki Developers</a></span></p>
 				</div>
-				<div class="col-lg-2 offset-md-4">
+				<div class="col-lg-2 offset-md-2">
 					<a href="https://www.instagram.com/traveltztoday/"><ion-icon name="logo-instagram"></ion-icon></a>
 					<a href="https://twitter.com/traveltztoday"><ion-icon name="logo-twitter"></ion-icon></a>
 					<a href="https://www.facebook.com/traveltztoday/"><ion-icon name="logo-facebook"></ion-icon></a>
