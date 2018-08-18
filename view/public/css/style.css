@@ -53,7 +53,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     background-color: #262626;
 }
 .banner{
-	background-image:url('hero.jpg');
+	background-image:url('../images/hero.jpg');
 	text-align: center;
     color: #fff;
 
