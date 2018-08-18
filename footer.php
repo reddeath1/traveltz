@@ -31,7 +31,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Newsletter</h4>
-					<p>Subscribe to our monthly Newsletter.</p>
+					<p>Enter your E-mail address to get the latest news, special events and activities delivered right into your inbox</p>
 					<div class="input-group mb-3">
 						<input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
 						<div class="input-group-append">
