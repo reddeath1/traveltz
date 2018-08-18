@@ -1,3 +1,4 @@
+</body>
 <footer>
 	<div class="container-fluid">
 		<div class="container footerD">
@@ -46,7 +47,7 @@
 		<div class="container social">
 			<div class="row">
 				<div class="col-lg-4">
-					<p>&copy; 2018 Travel TZ Today</p>
+					<p>&copy; <?php echo date('Y')?> Travel TZ Today</p>
 				</div>
 				<div class="col-lg-2 offset-md-6">
 					<ion-icon name="logo-instagram"></ion-icon>
@@ -58,9 +59,6 @@
 		</div>
 	</div>
 </footer>
-
-
-</body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
