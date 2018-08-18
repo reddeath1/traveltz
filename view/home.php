@@ -12,7 +12,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1"><ion-icon name="calendar"></ion-icon></span>
 										</div>
-										<input type="text" class="form-control" placeholder="Date">
+										<input type="date" class="form-control" placeholder="Date">
 									</div>
 									<div class="form-group input-group-lg col-md-4">
 										<input type="text" class="form-control" placeholder="From">
