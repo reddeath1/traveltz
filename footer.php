@@ -3,13 +3,13 @@
 	<div class="container-fluid">
 		<div class="container footerD">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<h3 class="navbar-brand"><span>Logo</span> Here</h3>
 					<p class="text-justify">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vitae ut rem quam assumenda, perspiciatis dignissimos deleniti quis? Fugit voluptatem totam itaque reprehenderit eligendi delectus iure labore, atque aliquam debitis?
 					</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col">
 					<h4>Heading</h4>
 					<ol>
 						<li>Link1</li>
@@ -19,7 +19,7 @@
 						<li>Link1</li>
 					</ol>
 				</div>
-				<div class="col-md-3 contacts">
+				<div class="col contacts">
 					<h4>Contact us</h4>
 					<ol>
 						<li>Link</li>
@@ -29,7 +29,7 @@
 						<li>Link1</li>
 					</ol>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3">
 					<h4>Newsletter</h4>
 					<p>Enter your E-mail address to get the latest news, special events and activities delivered right into your inbox</p>
 					<div class="input-group mb-3">
