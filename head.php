@@ -8,7 +8,7 @@
 	<link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link href="view/public/css/style.css" rel="stylesheet">
-	<title></title>
+	<title>TravelTz Today</title>
 </head>
 
 <body>
