@@ -242,3 +242,32 @@ hr {
 .soc ion-icon {
 	color: #ffffff;
 }
+.event-day {
+	color: #FF5722;
+	font-weight: 700;
+	font-size: 36px;
+}
+.event-month {
+	color: #262626;
+	font-weight: 600;
+	font-size: 16px;
+}
+.event-content {
+	color: #262626;
+	padding: 10px;
+}
+.event-content h5 {
+	color: #FF5722;
+}
+.conts {
+	border-right: 1px solid #ddd;
+	margin-top: 5px;
+	padding-right: 10px;
+
+}
+.event-border-root {
+    height:2px;
+    background: #FF5722;
+	width: 10%;
+
+}

@@ -94,81 +94,107 @@
 			<div class="border-root col-md-3 offset-md-5"></div>
 		</div>
 		<div class="container">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-body">
-										<div class="card border-dark mb-3" style="max-width: 5rem;">
-											<div class="card-header text-center">Mar</div>
-											<div class="card-body">
-												<h4 class="card-text text-center">5</h4>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="container">
+													<div class="row">
+														<div class="col-sm-2">
+															<p class="event-day mb-0 text-center">14</p>
+															<p class="event-month mt-0 text-center">MAR</p>
+														</div>
+														<div class="col-sm-10 event-content">
+															<h5 class="mb-3 mt-2">News #1</h5>
+															<div class="event-border-root mb-2"></div>
+															<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid saepe vel quisquam at velit et, minus ratione distinctio fugiat reiciendis architecto porro voluptatum enim. Repellendus reiciendis fuga nulla, necessitatibus deleniti.</p>
+															<a href="#" class="btn btn-banner-outline">Read More</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="container">
+													<div class="row">
+														<div class="col-sm-2">
+															<p class="event-day mb-0 text-center">14</p>
+															<p class="event-month mt-0 text-center">MAR</p>
+														</div>
+														<div class="col-sm-10 event-content">
+															<h5 class="mb-3 mt-2">News #1</h5>
+															<div class="event-border-root mb-2"></div>
+															<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid saepe vel quisquam at velit et, minus ratione distinctio fugiat reiciendis architecto porro voluptatum enim. Repellendus reiciendis fuga nulla, necessitatibus deleniti.</p>
+															<a href="#" class="btn btn-banner-outline">Read More</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-body">
-										<div class="card border-dark mb-3" style="max-width: 5rem;">
-											<div class="card-header text-center">Mar</div>
-											<div class="card-body">
-												<h4 class="card-text text-center">6</h4>
+
+							<div class="carousel-item">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="container">
+													<div class="row">
+														<div class="col-sm-2">
+															<p class="event-day mb-0 text-center">14</p>
+															<p class="event-month mt-0 text-center">MAR</p>
+														</div>
+														<div class="col-sm-10 event-content">
+															<h5 class="mb-3 mt-2">News #1</h5>
+															<div class="event-border-root mb-2"></div>
+															<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid saepe vel quisquam at velit et, minus ratione distinctio fugiat reiciendis architecto porro voluptatum enim. Repellendus reiciendis fuga nulla, necessitatibus deleniti.</p>
+															<a href="#" class="btn btn-banner-outline">Read More</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
+										<div class="col-sm-6">
+											<div class="card">
+												<div class="container">
+													<div class="row">
+														<div class="col-sm-2">
+															<p class="event-day mb-0 text-center">14</p>
+															<p class="event-month mt-0 text-center">MAR</p>
+														</div>
+														<div class="col-sm-10 event-content">
+															<h5 class="mb-3 mt-2">News #1</h5>
+															<div class="event-border-root mb-2"></div>
+															<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid saepe vel quisquam at velit et, minus ratione distinctio fugiat reiciendis architecto porro voluptatum enim. Repellendus reiciendis fuga nulla, necessitatibus deleniti.</p>
+															<a href="#" class="btn btn-banner-outline">Read More</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
+
+						</div>
+						<div class="carousel-controllers">
+							<!-- Left and right controls -->
+							<a class="carousel-control-prevv" href="#carouselExampleIndicators" data-slide="prev">
+								<ion-icon name="arrow-dropleft-circle"></ion-icon>
+							</a>
+							<a class="carousel-control-nexxt" href="#carouselExampleIndicators" data-slide="next">
+								<ion-icon name="arrow-dropright-circle"></ion-icon>
+							</a>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-body">
-										<div class="card border-dark mb-3" style="max-width: 5rem;">
-											<div class="card-header text-center">Mar</div>
-											<div class="card-body">
-												<h4 class="card-text text-center">5</h4>
-											</div>
-										</div>
-										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="card">
-									<div class="card-body">
-										<div class="card border-dark mb-3" style="max-width: 5rem;">
-											<div class="card-header text-center">Mar</div>
-											<div class="card-body">
-												<h4 class="card-text text-center">6</h4>
-											</div>
-										</div>
-										<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-										<a href="#" class="btn btn-primary">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-controllers">
-					<!-- Left and right controls -->
-					<a class="carousel-control-prevv" href="#carouselExampleIndicators" data-slide="prev">
-				    <span class="carousel-control-prev-icon"></span>
-			</a>
-					<a class="carousel-control-nexxt" href="#carouselExampleIndicators" data-slide="next">
-				    <span class="carousel-control-next-icon"></span>
-			</a>
 				</div>
 			</div>
 		</div>
