@@ -97,6 +97,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	background-color: #FF5722;
 	border: 1px solid #FF5722;
 }
+.btn-banner-outline{
+	padding:5px 20px;
+	border-radius:5px;
+	font-weight:400;
+	line-height:1.5;
+	text-align:center;
+	color:#FF5722;
+	background-color: #FFf;
+	border: 1px solid #FF5722;
+}
 .text-intro{
 	width:90%;
 	margin:auto;
@@ -221,7 +231,10 @@ hr {
 .social ion-icon {
   font-size: 24px;
 }
-
+.carousel-controllers ion-icon {
+  font-size: 30px;
+	color: #FF5722;
+}
 .contacts ion-icon {
   font-size: 24px;
 }
