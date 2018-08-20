@@ -53,7 +53,7 @@
 					<a target="_blank" href="https://www.instagram.com/traveltztoday/"><ion-icon name="logo-instagram"></ion-icon></a>
 					<a target="_blank" href="https://twitter.com/traveltztoday"><ion-icon name="logo-twitter"></ion-icon></a>
 					<a target="_blank" href="https://www.facebook.com/traveltztoday/"><ion-icon name="logo-facebook"></ion-icon></a>
-				</div>
+					<a href="#"><ion-icon name="mail"></ion-icon></a>
 			</div>
 		</div>
 	</div>
