@@ -1,19 +1,19 @@
 <div class="container-fluid res">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 offset-md-2">
+			<div class="col">
 				<form>
 					<div class="form-row">
-						<div class="input-group form-group input-group-md col-lg-4">
+						<div class="input-group form-group input-group-md col-sm">
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="basic-addon1"><ion-icon name="calendar"></ion-icon></span>
 							</div>
 							<input type="text" class="form-control" placeholder="Date">
 						</div>
-						<div class="form-group input-group-md col-lg-4">
+						<div class="form-group input-group-md col-sm">
 							<input type="text" class="form-control" placeholder="From">
 						</div>
-						<div class="form-group input-group-md col-lg-4">
+						<div class="form-group input-group-md col-sm">
 							<input type="text" class="form-control" placeholder="To">
 						</div>
 					</div>
