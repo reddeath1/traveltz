@@ -25,7 +25,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="btn btn-primary btn-banner" href="result.php" role="button">Check Availability</a>
+				<a class="btn btn-primary btn-banner" href="result/" role="button">Check Availability</a>
 			</div>
 		</div>
 	</div>

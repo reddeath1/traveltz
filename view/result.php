@@ -1,4 +1,26 @@
 <div class="container-fluid res">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<form>
+					<div class="form-row">
+						<div class="input-group form-group input-group-md col-md-4">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1"><ion-icon name="calendar"></ion-icon></span>
+							</div>
+							<input type="text" class="form-control" placeholder="Date">
+						</div>
+						<div class="form-group input-group-md col-md-4">
+							<input type="text" class="form-control" placeholder="From">
+						</div>
+						<div class="form-group input-group-md col-md-4">
+							<input type="text" class="form-control" placeholder="To">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="container res-0">
 		<div class="card">
 			<div class="container">
