@@ -7,7 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="<?php echo $url;?>/view/public/css/style.css" rel="stylesheet">
+    <link href="<?php $url;?>/view/public/css/style.css" rel="stylesheet">
     <title>TravelTz Today</title>
 </head>
 
