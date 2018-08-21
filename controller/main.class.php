@@ -23,5 +23,4 @@ class Main{
         return $name;
     }
 }
-new Index();
 ?>
