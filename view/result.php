@@ -76,19 +76,33 @@
   </a>
 					<div class="collapse" id="collapseExample">
 						<div class="accordion-1">
-							<span class="badge badge-dark">
+							<span class="badge badge-secondary">
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
 									<label class="form-check-label" for="inlineCheckbox1">KLM EXP</label>
 								</div>
 								<span class="badge badge-light">4</span>
 							</span>
-							<span class="badge badge-dark">
+							<span class="badge badge-secondary">
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-									<label class="form-check-label" for="inlineCheckbox1">KLM EXP</label>
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+									<label class="form-check-label" for="inlineCheckbox2">TAHMEED</label>
 								</div>
-								<span class="badge badge-light">4</span>
+								<span class="badge badge-light">1</span>
+							</span>
+							<span class="badge badge-secondary">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+									<label class="form-check-label" for="inlineCheckbox3">DAR EXPRESS</label>
+								</div>
+								<span class="badge badge-light">2</span>
+							</span>
+							<span class="badge badge-secondary">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+									<label class="form-check-label" for="inlineCheckbox4">ABOOD</label>
+								</div>
+								<span class="badge badge-light">8</span>
 							</span>
 
 						</div>
