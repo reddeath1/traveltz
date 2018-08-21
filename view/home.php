@@ -101,7 +101,7 @@
 							<div class="carousel-item active">
 								<div class="container">
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<div class="card">
 												<div class="container">
 													<div class="row">
@@ -119,7 +119,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<div class="card">
 												<div class="container">
 													<div class="row">
@@ -144,7 +144,7 @@
 							<div class="carousel-item">
 								<div class="container">
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<div class="card">
 												<div class="container">
 													<div class="row">
@@ -162,7 +162,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<div class="card">
 												<div class="container">
 													<div class="row">
