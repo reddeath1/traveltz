@@ -295,6 +295,7 @@ hr {
 }
 .card {
 	padding: 10px 0px;
+	margin-right: -10px;
 }
 .amenities ion-icon {
 	padding: 0px 8px;
@@ -309,4 +310,17 @@ hr {
 }
 .res-0 {
 	padding-bottom: 5px;
+}
+.filters {
+	color: #ffffff;
+	padding: 20px;
+}
+.filters-0 {
+	margin-left: 20px;
+}
+.filter-border-root {
+    height:2px;
+    background: #FF5722;
+	width: 30px;
+
 }
