@@ -24,5 +24,5 @@ class Index extends Main{
     }
 }
 
-
+new Index();
 ?>
