@@ -25,7 +25,7 @@
 						</div>
 					</div>
 				</div>
-				<a class="btn btn-primary btn-banner" href="result/" role="button">Check Availability</a>
+				<a class="btn btn-primary btn-banner" href="<?php echo $url;?>/result/" role="button">Check Availability</a>
 			</div>
 		</div>
 	</div>
@@ -49,30 +49,30 @@
 		<div class="container carousel-inner no-padding">
 			<div class="carousel-item active">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 			</div>
 			<div class="carousel-item">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="../view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 			</div>
 		</div>
