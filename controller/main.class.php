@@ -14,11 +14,9 @@ class Main{
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-        // if(preg_match('/localhost/',$name)){
-        //     $name = $name. '/nevaa';
-        // }else if(preg_match("/192.168.42.200/",$name)){
-        //     $name = $name."/nevaa";
-        // }
+         if(preg_match('/localhost/',$name)){
+             $name = $name. '/Traveltz';
+         }
 
         return $name;
     }
