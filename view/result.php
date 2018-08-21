@@ -43,7 +43,7 @@
 						<p><strong>SEATS AVAILABLE:&nbsp;(27)</strong></p>
 
 					</div>
-					<div class="col-sm booker">
+					<div class="col-sm align-self-center">
 						<button class="btn btn-banner">Book Now</button>
 					</div>
 				</div>
@@ -72,7 +72,7 @@
 						<p><strong>SEATS AVAILABLE:&nbsp;(27)</strong></p>
 
 					</div>
-					<div class="col-sm booker">
+					<div class="col-sm align-self-center">
 						<button class="btn btn-banner">Book Now</button>
 					</div>
 				</div>
