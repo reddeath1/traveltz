@@ -13,7 +13,7 @@
 						<div class="form-group input-group-md col-sm">
 							<input type="text" class="form-control" placeholder="From">
 						</div>
-						<div class="form-group input-group-md col-smsm">
+						<div class="form-group input-group-md col-sm">
 							<input type="text" class="form-control" placeholder="To">
 						</div>
 					</div>
