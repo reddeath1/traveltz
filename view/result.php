@@ -131,7 +131,7 @@
 
 								</div>
 								<div class="col-sm align-self-center">
-									<a href="seater/" class="btn btn-banner">Book Now</a>
+									<a href="<?php echo $url;?>/seater/" class="btn btn-banner">Book Now</a>
 								</div>
 							</div>
 						</div>
