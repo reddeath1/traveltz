@@ -160,7 +160,7 @@
 
 								</div>
 								<div class="col-sm align-self-center">
-									<button class="btn btn-banner">Book Now</button>
+									<a href="<?php echo $url;?>/seater/" class="btn btn-banner">Book Now</a>
 								</div>
 							</div>
 						</div>
