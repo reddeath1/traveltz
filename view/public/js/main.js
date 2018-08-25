@@ -29,6 +29,11 @@ Ttz.StrictDate = function (el) {
     date = year+'-'+month+'-'+today;
 
     el.attr('min',date);
+
+    el.element.addEventListener('keyup',function () {
+         this.focus();
+        this.value = '';
+    });
 };
 
 Ttz.CheckAvailability =function(el){
