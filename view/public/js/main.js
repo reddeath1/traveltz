@@ -33,6 +33,9 @@ Ttz.StrictDate = function (el) {
     el.element.addEventListener('keyup',function () {
          this.focus();
         this.value = '';
+    });el.element.addEventListener('keydown',function () {
+         this.focus();
+        this.value = '';
     });
 };
 
