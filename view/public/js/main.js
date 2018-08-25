@@ -47,7 +47,6 @@ Ttz.CheckAvailability =function(el){
 };
 
 
-
 (function($,http,_T){
 
     /**
