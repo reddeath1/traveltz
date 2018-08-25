@@ -70,6 +70,7 @@
             </div>
         </div>
 </footer>
+<script src="<?php echo $url;?>/view/public/js/lib/exile.js">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous">
 </script>
@@ -81,9 +82,9 @@
 </script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
 </script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
-<script src="<?php $url;?>/view/public/js/main.js">
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">-->
+<!--</script>-->
+<script src="<?php echo $url;?>/view/public/js/main.js">
 </script>
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js">
 </script>

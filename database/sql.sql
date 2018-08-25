@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS users (
     age int(11) NOT NULL,
     password text NOT NULL,
     co_id int(11),
-	 birth_date datetime not null default current_timestamps,
+	birth_date datetime not null default current_timestamps,
     priv enum('user','admin','agent','super') default 'user' not null,
     gender enum('m','f') default 'm' NOT NULL,
 	PRIMARY KEY(id),

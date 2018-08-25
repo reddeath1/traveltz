@@ -56,7 +56,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	background-image:url('../images/hero.jpg');
 	text-align: center;
     color: #fff;
-
+	transition: font-size.5s linear 0s;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -64,7 +64,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	height: 100vh;
+	height: 700px;
 }
 .banner-text{
 	padding:300px 0 150px 0;
@@ -87,14 +87,17 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
 
 .btn-banner{
-	padding:5px 20px;
-	border-radius:5px;
+	padding:10px 20px;
+	border-radius:8px;
 	font-weight:400;
 	line-height:1.5;
 	text-align:center;
 	color:#fff;
+	margin-top: 50px;
+	transition: .5s linear 0s;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	background-color: #FF5722;
+	background-color: #b13e1c;
 	border: 1px solid #FF5722;
 }
 .btn-banner-outline{
