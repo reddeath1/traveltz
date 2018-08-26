@@ -44,7 +44,6 @@ Ttz.CheckAvailability =function(el){
      */
     _T.ChangeNaviState();
 
-
     /**
      * date picker management
      */

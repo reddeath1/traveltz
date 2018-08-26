@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="added some feature improved home layout for bigger screens, restricted the past date selection on the date picker and added EXILE as the main controller over Jquery for improving performance.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/public/js/lib/exile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/main.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/sql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/css/style.css" afterDir="false" />
+    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/view/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,14 +16,14 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+            <state relative-caret-position="229">
+              <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
                 <element signature="e#0#93#0" expanded="true" />
                 <element signature="e#116#286#0" expanded="true" />
+                <element signature="e#647#678#0" expanded="true" />
                 <element signature="e#706#707#0" expanded="true" />
                 <element signature="e#769#770#0" expanded="true" />
-                <element signature="e#608#819#0" expanded="true" />
                 <element signature="e#683#731#0" expanded="true" />
                 <element signature="e#643#684#0" expanded="true" />
                 <element signature="e#746#789#0" expanded="true" />
@@ -177,7 +168,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Nodejs/frank-galos" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
@@ -259,7 +250,7 @@
       <workItem from="1533569276810" duration="3321000" />
       <workItem from="1533885504695" duration="86000" />
       <workItem from="1533893520878" duration="43000" />
-      <workItem from="1535151460733" duration="5142000" />
+      <workItem from="1535151460733" duration="5492000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -268,11 +259,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533572123047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added some feature improved home layout for bigger screens, restricted the past date selection on the date picker and added EXILE as the main controller over Jquery for improving performance.">
+      <created>1535156646056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535156646057</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8592000" />
+    <option name="totallyTimeSpent" value="8942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -298,7 +296,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3277027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3277027" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2603912" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -532,14 +530,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        <state relative-caret-position="229">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
             <element signature="e#116#286#0" expanded="true" />
+            <element signature="e#647#678#0" expanded="true" />
             <element signature="e#706#707#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#608#819#0" expanded="true" />
             <element signature="e#683#731#0" expanded="true" />
             <element signature="e#643#684#0" expanded="true" />
             <element signature="e#746#789#0" expanded="true" />
