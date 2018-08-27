@@ -31,9 +31,9 @@
   							</select>
 						</div>
 					</div>
-					
+
 <!--					DUPLICATE OF THE FORM-->
-					
+
 					<div class="form-row align-items-center">
 						<div class="col-sm">
 							<label class="sr-only" for="inlineFormInputGroup">First Name</label>
@@ -64,7 +64,7 @@
 					</div>
 				</form>
 			</div>
-			
+
 		</div>
 	</div>
 	<div class="container">
