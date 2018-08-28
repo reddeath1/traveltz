@@ -5,30 +5,7 @@
 			<div class="banner-sub-heading">
 				<div class="row justify-content-center">
 					<div class="row col-lg-10">
-						<div class="container">
-							<form>
-								<div class="form-row">
-									<div class="input-group form-group input-group-lg col-md-4">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1"><ion-icon name="calendar"></ion-icon></span>
-										</div>
-										<input type="date" class="form-control" placeholder="Date" id="date-picker">
-									</div>
-									<div class="form-group input-group-lg col-md-4">
-										<select class="form-control" id="from">
-                                            <option value="">From</option>
-                                            <?php echo $location_names;?>
-                                        </select>
-									</div>
-									<div class="form-group input-group-lg col-md-4">
-                                        <select class="form-control" id="to">
-                                            <option value="">To</option>
-                                            <?php echo $location_names;?>
-                                        </select>
-									</div>
-								</div>
-							</form>
-						</div>
+						<?php include_once (__DIR__.'/filter.php');?>
 					</div>
 				</div>
 				<a class="btn btn-primary btn-banner" href="<?php echo $url;?>/result/" role="button">Check Availability</a>

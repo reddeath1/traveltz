@@ -6,7 +6,7 @@ include_once('head.php');
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
 	<div class="container">
 		<!-- Brand -->
-		<a class="navbar-brand" href="https://traveltz.herokuapp.com/"><span>Logo</span> Here</a>
+		<a class="navbar-brand" href="<?php echo $url;?>"><span>Logo</span> Here</a>
 
 		<!-- Toggler/collapsibe Button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

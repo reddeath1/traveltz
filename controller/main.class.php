@@ -6,10 +6,14 @@ class Main extends connection {
         parent::__construct();
     }
 
-    public function getLocations(){
+    public function getLocations($str = ''){
         $data = array();
 
-        $sql = $this->conn->query("SELECT * FROM location ORDER BY name ASC");
+        if(!empty($str)){
+            $str = "WHERE $str";
+        }
+
+        $sql = $this->conn->query("SELECT * FROM location $str ORDER BY name ASC");
 
         if($sql->num_rows > 0){
             for ($data = array(); $row = $sql->fetch_array(MYSQLI_ASSOC); $data[] = $row) ;

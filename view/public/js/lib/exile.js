@@ -1335,6 +1335,14 @@ Exile = function (selector) {
             return false;
         })
     };
+
+    ex.submit = function(){
+        this.element.submit();
+    };
+
+    ex.isNotEmpty = function(){
+        return (this.element.value.length > 0);
+    };
     /**
      *
      * @type {{init: init, reader: reader, orientation: orientation, orientationProgress: orientationProgress, loaded: loaded, orietationLoad: orietationLoad, base64ToBlob: (function(*, *=): Blob), template: (function(*): string), uploader: uploader, progress: (function(*): string), onpending: onpending, onpendingEnd: onpendingEnd, croper: croper, close: close}}

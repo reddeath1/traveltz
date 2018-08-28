@@ -2,13 +2,30 @@ Options -Indexes
 Options +FollowSymLinks -MultiViews
 # Turn mod_rewrite on
 RewriteEngine On
+#
+#RewriteRule ^([a-zA-Z0-9_]+|)/([^/]+)?$ index.php?action=$1&q=$2 [L,QSA]
+#
+
+# skip POST requests
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^ - [L]
 
 RewriteRule ^([a-zA-Z0-9_]+|)/([^/]+)?$ index.php?action=$1&q=$2 [L,QSA]
+
+RewriteRule result /view/result.php
+
+# browser requests PHP
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+#RewriteRule ^/?(.*)/?([a-zA-Z0-9_]+|)\.php$ /$1?action=$2 [L,R=301]
+#
+## check to see if the request is for a PHP file:
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^/?(.*)/?([a-zA-Z0-9_]+|)$ /$1.php?action=$2 [L]
 
 RewriteRule 404 view/errors/404.php
 
 RewriteRule 403 view/errors/403.php
 
-ErrorDocument 404 http://traveltz.herokuapp.com/404
+ErrorDocument 404 /404
 
-ErrorDocument 403 http://traveltz.herokuapp.com/403
+ErrorDocument 403 /403

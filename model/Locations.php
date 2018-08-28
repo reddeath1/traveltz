@@ -17,7 +17,7 @@ class Locations extends Main
         parent::__construct();
     }
 
-    public function getLocations(){
-       return parent::getLocations();
+    public function getLocations($str = ''){
+       return parent::getLocations($str);
     }
 }

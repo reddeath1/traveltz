@@ -39,7 +39,16 @@ Ttz.StrictDate = function (el) {
 Ttz.CheckAvailability =function(el){
     el.disableClick();
     el.on('mousedown',function () {
-        alert('I m disabled for further development..');
+        ($$('#date-picker').isNotEmpty() &&
+            $$('#from').isNotEmpty() &&
+            $$('#to').isNotEmpty() &&
+            ($$('#from').value() !== $$('#to').value())) ?
+
+        $$('form').submit() :
+
+            ($$('#from').value() === $$('#to').value()) ?
+                alert("Sorry there is no bus going that route") :
+                alert("All fields are required!");
     })
 };
 

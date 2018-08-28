@@ -1,6 +1,29 @@
+<?php if(!isset($_GET['date']) || !isset($_GET['from']) || !isset($_GET['to'])|| empty($_GET['from']) || empty($_GET['to']) || empty($_GET['date'])) {
+  echo "<script>window.location.href = '$url';</script>"; };
+
+$default_date = preg_replace('#[^0-9-]#','',$_GET['date']);
+$default_from = preg_replace('#[^0-9]#','',$_GET['from']);
+$default_to = preg_replace('#[^0-9]#','',$_GET['to']);
+
+
+$default_froms = @$locations->getLocations("id='$default_from'")[0];
+$default_from_name = @$default_froms['name'];
+$default_from_id = @$default_froms['id'];
+$default_tos = @$locations->getLocations("id='$default_to'")[0];
+$default_to_name = @$default_tos['name'];
+$default_to_id = $default_tos['id'];
+
+if($default_to === $default_to_id)
+{
+    $default_to = "<option value='$default_to_id' selected>$default_to_name</option>";
+}
+if($default_from === $default_from_id)
+{
+    $default_from = "<option value='$default_from_id' selected>$default_from_name</option>";
+}
+?>
+
 <div class="container-fluid res">
-
-
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2">
@@ -47,28 +70,7 @@
 				</div>
 			</div>
 			<div class="col-lg-10">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<form>
-								<div class="form-row">
-									<div class="input-group form-group input-group-md col-sm">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1"><ion-icon name="calendar"></ion-icon></span>
-										</div>
-										<input type="text" class="form-control" placeholder="Date">
-									</div>
-									<div class="form-group input-group-md col-sm">
-										<input type="text" class="form-control" placeholder="From">
-									</div>
-									<div class="form-group input-group-md col-sm">
-										<input type="text" class="form-control" placeholder="To">
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
+                <?php include_once (__DIR__.'/filter.php');?>
 				<div class="container mb-4 accordion-0">
 					<hr>
 					<a class="mb-3 text-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

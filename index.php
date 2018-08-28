@@ -21,10 +21,10 @@ class Index {
          */
 
      $locations = new Locations();
-     $locations = $locations->getLocations();
+     $locationss = $locations->getLocations();
      $location_names = '';
 
-        foreach ($locations as $location) {
+        foreach ($locationss as $location) {
             $lid = $location['id'];
             $lname = $location['name'];
             $location_names .= "<option value='$lid'>$lname</option>";
@@ -33,6 +33,11 @@ class Index {
 
 
         $url = $this->Url();
+        $default_date = '';
+        $default_from = '';
+        $default_to = '';
+
+
         include_once('header.php');
         (isset($_GET['action']) && !empty($_GET['action'])) ? $action = $_GET['action'] : $action = '';
         (isset($_GET['q']) && $_GET['q'])  ? $q = htmlentities($_GET['q']) : $q = '';
