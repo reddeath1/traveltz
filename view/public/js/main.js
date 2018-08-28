@@ -44,7 +44,9 @@ Ttz.CheckAvailability =function(el){
 };
 
 
-
+/**
+ * This is a brain of this software
+ */
 (function($,http,_T){
 
     /**
