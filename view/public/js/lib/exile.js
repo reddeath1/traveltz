@@ -992,6 +992,13 @@ Exile = function (selector) {
         return parseInt(n);
     };
 
+    ex.isNull = function(){
+        var state = (typeof this.element == 'undefined' ||
+            this.element === null) ? true : false;
+
+        return state;
+    };
+
     /**
      * @type {{init: init, name: name, version: version, agent: agent, os: os, cookieEnabled: cookieEnabled, info: info}}
      */

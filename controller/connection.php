@@ -12,6 +12,8 @@ class connection{
         $this->pass = '';
         $this->host = 'localhost';
         $this->db = 'traveltz';
+        (!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI'])) ? $this->db = 'klmexpre_database' : $this->db;
+
         $this->conn = $this->connect();
     }
 

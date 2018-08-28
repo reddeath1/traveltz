@@ -4,7 +4,8 @@ USE klmexpre_traveltz;*/
 
 CREATE TABLE IF NOT EXISTS company (
     id int(11) auto_increment NOT NULL,
-    name varchar(25),
+    name varchar(25) not null,
+    logo text not null,
 	primary key(id)
 )ENGINE=INNODB;
 	
@@ -12,11 +13,19 @@ CREATE TABLE IF NOT EXISTS company (
 CREATE TABLE IF NOT EXISTS bus (
     id int(11) auto_increment NOT NULL,
     name text,
-    bus_no int(11) NOT NULL,
+    bus_no varchar (255) NOT NULL,
     co_id int(11) NOT NULL,
     seats_count int(11) NOT NULL,
 	primary key(id),
 	foreign key(co_id) references company(id)
+)ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS routine (
+    id int(11) auto_increment NOT NULL,
+    bus_id int(11) NOT NULL,
+    dep_date datetime not null ,
+	primary key(id),
+	foreign key(bus_id) references bus(id)
 )ENGINE=INNODB;
 	
 
