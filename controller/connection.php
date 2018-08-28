@@ -23,7 +23,7 @@ class connection{
     }
 
     private function connect(){
-        echo $this->user;
+        
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
