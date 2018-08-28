@@ -49,7 +49,7 @@
 						<li class="list-group-item"><strong>TOTAL</strong>: <span class="float-right">85000Tzs</span></li>
 					</ul>
 				</div>
-				<a class="btn btn-banner btn-block mt-2">NEXT</a>
+				<a href="<?php echo $url;?>/personaldetails/" class="btn btn-banner btn-block mt-2">NEXT</a>
 			</div>
 		</div>
 	</div>
