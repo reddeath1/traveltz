@@ -15,10 +15,14 @@
 										<input type="date" class="form-control" placeholder="Date" id="date-picker">
 									</div>
 									<div class="form-group input-group-lg col-md-4">
-										<input type="text" class="form-control" placeholder="From">
+										<select class="form-control" id="from">
+                                            <option value="">From</option>
+                                        </select>
 									</div>
 									<div class="form-group input-group-lg col-md-4">
-										<input type="text" class="form-control" placeholder="To">
+                                        <select class="form-control" id="to">
+                                            <option value="">To</option>
+                                        </select>
 									</div>
 								</div>
 							</form>
