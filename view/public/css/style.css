@@ -121,6 +121,11 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	text-align: center;
+}
+
+#from > option,#to > option{
+	text-align: center;
 }
 
 
@@ -417,4 +422,16 @@ hr {
 }
 .summary ion-icon {
 	font-size: 24px;
+}
+.login-body {
+	background-color:  #262626;
+	height: 100vh;
+}
+
+.login-body ion-icon {
+	font-size: 26px;
+	color: #262626;
+}
+.login {
+	margin-top: 10vh;
 }

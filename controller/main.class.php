@@ -1,25 +1,25 @@
 <?php 
-
-class Main{
+include_once 'connection.php';
+class Main extends connection {
 
     public function __construct(){
-        
+        parent::__construct();
     }
 
-    /**
-     * Get url
-     */
-    public function Url(){
-        $page_url   = 'http';
-        if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on'){
-            $page_url .= 's';
+    public function getLocations(){
+        $data = array();
+
+        $sql = $this->conn->query("SELECT * FROM location ORDER BY name ASC");
+
+        if($sql->num_rows > 0){
+            for ($data = array(); $row = $sql->fetch_array(MYSQLI_ASSOC); $data[] = $row) ;
+
         }
 
-        $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
+     $sql->free();
 
-        (preg_match('/(localhost)/', $name)) ? $name .= '/traveltz' : $name;
+     return $data;
+ }
 
-        return $name;
-    }
 }
 ?>

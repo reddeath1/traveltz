@@ -17,11 +17,13 @@
 									<div class="form-group input-group-lg col-md-4">
 										<select class="form-control" id="from">
                                             <option value="">From</option>
+                                            <?php echo $location_names;?>
                                         </select>
 									</div>
 									<div class="form-group input-group-lg col-md-4">
                                         <select class="form-control" id="to">
                                             <option value="">To</option>
+                                            <?php echo $location_names;?>
                                         </select>
 									</div>
 								</div>

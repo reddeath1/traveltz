@@ -33,9 +33,6 @@ Ttz.StrictDate = function (el) {
     el.element.addEventListener('keyup',function () {
          this.focus();
         this.value = '';
-    });el.element.addEventListener('keydown',function () {
-         this.focus();
-        this.value = '';
     });
 };
 
@@ -47,13 +44,15 @@ Ttz.CheckAvailability =function(el){
 };
 
 
+/**
+ * This is a brain of this software
+ */
 (function($,http,_T){
 
     /**
      * change navigation menu states
      */
     _T.ChangeNaviState();
-
 
     /**
      * date picker management
