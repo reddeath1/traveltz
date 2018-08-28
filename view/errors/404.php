@@ -14,7 +14,7 @@
 				<h3 class="mt-2">error</h3>
 				<h1 class="error-heading">404</h1>
 				<h6>An error occured in the application and your page could not be served.</h6>
-				<a href="?" class="btn btn-banner-outlined mt-4">BACK TO HOME</a>
+				<a href="<?php echo $url;?>" class="btn btn-banner-outlined mt-4">BACK TO HOME</a>
 				<div class="soc">
 					<a href="https://www.instagram.com/traveltztoday/">
 						<ion-icon name="logo-instagram"></ion-icon>
