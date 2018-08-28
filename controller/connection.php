@@ -16,6 +16,7 @@ class connection{
         {
             $this->db = 'klmexpre_database';
             $this->user = 'klmexpre_dbuser';
+            $this->pass = '8T88n3PLopK2';
         }
 
         $this->conn = $this->connect();
