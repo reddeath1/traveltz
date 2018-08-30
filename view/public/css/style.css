@@ -56,7 +56,6 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	background-image:url('../images/hero.jpg');
 	text-align: center;
     color: #fff;
-	transition: font-size.5s linear 0s;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -65,7 +64,40 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     -o-background-size: cover;
     background-size: cover;
 	height: 700px;
+	animation: redd 1s linear 0s;
+	transition:1s linear 0s;
 }
+
+@-webkit-keyframes redd{
+	from {opacity: .0;
+		-webkit-transition: .6s linear 0s;
+		-moz-transition: .6s linear 0s;
+		-ms-transition: .6s linear 0s;
+		-o-transition: .6s linear 0s;
+		transition: .6s linear 0s;}
+	to {opacity: 1;
+		-webkit-transition: .6s linear 0s;
+		-moz-transition: .6s linear 0s;
+		-ms-transition: .6s linear 0s;
+		-o-transition: .6s linear 0s;
+		transition: .6s linear 0s;}
+}
+
+@keyframes redd{
+	from {opacity: .0;
+		-webkit-transition: .6s linear 0s;
+		-moz-transition: .6s linear 0s;
+		-ms-transition: .6s linear 0s;
+		-o-transition: .6s linear 0s;
+		transition: .6s linear 0s;}
+	to {opacity: 1;
+		-webkit-transition: .6s linear 0s;
+		-moz-transition: .6s linear 0s;
+		-ms-transition: .6s linear 0s;
+		-o-transition: .6s linear 0s;
+		transition: .6s linear 0s;}
+}
+
 .banner-text{
 	padding:300px 0 150px 0;
 }

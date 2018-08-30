@@ -74,4 +74,9 @@ Ttz.CheckAvailability =function(el){
      */
     _T.CheckAvailability($('.btn-banner'));
 
+    $$().slide({
+        type:'B',
+        e:'.banner',
+        images:['hero.jpg','img.jpg']});
+
 })($$,http,Ttz);

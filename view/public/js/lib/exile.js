@@ -22,7 +22,26 @@ Exile = function (selector) {
         isConnected = 0,
         connetion = null,
         sasha,
-        url = null;
+        url = null,
+        slides,
+        angle = 0,
+        images,
+        numpics,
+        degInt,
+        start = 0,
+        current = 1,
+        colored = false,
+        ul,
+        liItems,
+        imageWidth,
+        imageNumber,
+        currentImage = 0,
+        Index = 0,
+        next,
+        prev,
+        intervals = 7000,
+        imageArray = []
+    ;
 
 
     /**
@@ -286,12 +305,12 @@ Exile = function (selector) {
         let
             e = this.element;
 
-        if(name !== null && name !== ''
-            && value !== null && value !== ''){
+        if(typeof name !== 'undefined' && typeof value !== 'undefined'){console.log(name)
             return e.setAttribute(name,value);
         }else
         if(name !== null || name !== ''
             && value === null || value === ''){
+
             return e.getAttribute(name);
         }else{
             this.error("undefined attribute name and value");
@@ -992,13 +1011,6 @@ Exile = function (selector) {
         return parseInt(n);
     };
 
-    ex.isNull = function(){
-        var state = (typeof this.element == 'undefined' ||
-            this.element === null) ? true : false;
-
-        return state;
-    };
-
     /**
      * @type {{init: init, name: name, version: version, agent: agent, os: os, cookieEnabled: cookieEnabled, info: info}}
      */
@@ -1326,23 +1338,6 @@ Exile = function (selector) {
      */
     ex.DescribeLoaded = {loaded:false};
 
-    ex.log = function(smg){
-      return console.log(smg);
-    };
-
-    ex.disableClick = function(){
-        this.on('click',function () {
-            return false;
-        })
-    };
-
-    ex.submit = function(){
-        this.element.submit();
-    };
-
-    ex.isNotEmpty = function(){
-        return (this.element.value.length > 0);
-    };
     /**
      *
      * @type {{init: init, reader: reader, orientation: orientation, orientationProgress: orientationProgress, loaded: loaded, orietationLoad: orietationLoad, base64ToBlob: (function(*, *=): Blob), template: (function(*): string), uploader: uploader, progress: (function(*): string), onpending: onpending, onpendingEnd: onpendingEnd, croper: croper, close: close}}
@@ -2481,6 +2476,268 @@ Exile = function (selector) {
 
     };
 
+    ex.Esliders = {};
+
+    ex.Esliders._3D = {};
+
+    ex.Esliders._3D.init = function(){
+        images = "#spinner figure";
+        slides = Exile("#spinner").element;
+
+
+        Exile().each(images,function(index,value){
+            numpics = this.length;
+            degInt = 360 / numpics;
+            index.style.webkitTransform = "rotateY(-"+start+"deg)";
+            index.style.transform = "rotateY(-"+start+"deg)";
+            index.addEventListener("click", function() {
+                if (this.classList.contains('current')) {
+                    this.classList.toggle("focus");
+                }
+            });
+            start = start + degInt;
+        });
+    };
+
+    ex.Esliders._3D.setCurrentSlide = function(c){
+        Exile('figure#spinner figure:nth-child('+c+')').addClass('current');
+        console.log(c);
+        Exile('figure#spinner figure:nth-child('+c+')').element.classList.toggle('caption');
+    };
+
+    ex.Esliders._3D.slider = function(item){
+        this.init();
+        Exile().each(images, function (index, value) {
+            Exile(index).removeClass('current');
+            Exile(index).removeClass('focus');
+            Exile(index).removeClass('caption');
+        });
+
+        if (!item) { angle = angle + degInt;
+            current = (current+1);
+            if (current > numpics) { current = 1; }
+        } else {
+            angle = angle - degInt;
+            current = current - 1;
+            if (current === 0) { current = numpics; }
+        }
+
+        slides.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg)");
+
+        setTimeout( function(){
+            current++;
+            ex.Esliders._3D.slider(item);
+            ex.Esliders._3D.setCurrentSlide(current);
+        },6000);
+    };
+
+    ex.Esliders.horizontalSlider =  {
+        init:function(){
+
+            ul = document.getElementById("image_slider");
+            liItems = ul.children;
+            imageNumber = liItems.length;
+            imageWidth = liItems[0].children[0].offsetWidth;
+            // set ul’s width as the total width of all images in image slider.
+            ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
+            this.slide(ul);
+        },
+
+        slide:function (ul){
+            this.animate({
+                delay:17,
+                duration: 3000,
+                delta:function(p){return Math.max(0, -1 + 2 * p)},
+                step:function(delta){
+                    ul.style.left = '-' + parseInt(currentImage * imageWidth + delta * imageWidth) + 'px';
+                },
+                callback:function(){
+                    currentImage++;
+                    // if it doesn’t slied to the last image, keep sliding
+                    if(currentImage < imageNumber-1){
+                        ex.Esliders.horizontalSlider.slide(ul);
+                    }
+                    // if current image it’s the last one, it slides back to the first one
+                    else{
+                        var leftPosition = (imageNumber - 1) * imageWidth;
+                        // after 2 seconds, call the goBack function to slide to the first image
+                        setTimeout(function(){ex.Esliders.horizontalSlider.goBack(leftPosition)},2000);
+                        setTimeout(function(){ex.Esliders.horizontalSlider.slide(ul)}, intervals);
+                    }
+                }
+            });
+        },
+
+        goBack :function (leftPosition){
+            currentImage = 0;
+            var id = setInterval(function(){
+                if(leftPosition >= 0){
+                    ul.style.left = '-' + parseInt(leftPosition) + 'px';
+                    leftPosition -= imageWidth / 10;
+                }
+                else{
+                    clearInterval(id);
+                }
+            }, 17);
+        },
+
+        animate:function (opts){
+            var start = new Date;
+            var id = setInterval(function(){
+                var timePassed = new Date - start;
+                var progress = timePassed / opts.duration
+                if(progress > 1){
+                    progress = 1;
+                }
+                var delta = opts.delta(progress);
+                opts.step(delta);
+                if (progress == 1){
+                    clearInterval(id);
+                    opts.callback();
+                }
+            }, opts.dalay || 17);
+        }
+    };
+
+    ex.Esliders.fade = {
+        init:function(){
+            slides = document.getElementsByClassName("slide");
+            // next = Exile("#next").element;
+            // prev = Exile("#prev").element;
+            //
+            // next.addEventListener("click",ex.Esliders.fade.nextSlider,false);
+            // prev.addEventListener("click",ex.Esliders.fade.previousSlider,false);
+
+            this.slider();
+        },
+
+        nextSlider:function () {
+            var x;
+
+            for(x = 0; x < slides.length; x++){
+                slides[x].style.display = "none";
+            }
+
+            Index++;
+
+            if(Index > slides.length){Index = 1;}
+
+            slides[Index-1].style.display = "block";
+        },
+
+        previousSlider:function () {
+            var x;
+
+            if(Index > 1){
+
+                for(x = 0; x < slides.length; x++){
+                    slides[x].style.display = "none";
+                }
+                Index--;
+                slides[Index-1].style.display = "block";
+            }
+        },
+
+        slider:function (){
+            var x;
+
+            for(x = 0; x < slides.length; x++){
+                Exile(slides[x]).css({display:'none'});
+            }
+
+            Index++;
+
+            (Index > slides.length)? Index = 1 : '';
+
+            var color = (colored) ? Exile(slides[Index-1]).attr('data-color') : '';
+
+            Exile().each('.widligner',function(i,e){
+                console.log(i)
+                var wid = Exile(slides[Index-1]).width() + 100;
+                Exile(i).css({minWidth:wid+'px'});
+            });
+
+            (color) ?
+                Exile("header").css({background:color,perspective:800+'px'}) :'';
+            Exile(slides[Index-1]).css({display:'block'});
+
+            setTimeout(ex.Esliders.fade.slider,intervals);
+        }
+    };
+
+    ex.Esliders.backFade = {
+        init:function(){
+            images = Exile(images);
+            this.slider();
+        },
+
+        slider:function(){
+            if(typeof imageArray[Index] !== 'undefined'){
+                var url = (ex.addr().path[1] === 'traveltz') ? ex.addr().url+''+ex.addr().path[1]+'/' : ex.addr();
+
+                var img = url+'/view/public/images/'+imageArray[Index];
+
+                images.css({backgroundImage:'url("'+img+'")',backgroundSize:'cover'});
+
+                console.log(images.element)
+                Index++;
+                if (Index >= imageArray.length) {
+                    Index = 0;
+                }
+
+                setTimeout(ex.Esliders.backFade.slider,intervals);
+            }
+        }
+    };
+
+    ex.slide = function (obj){
+        var type = '3D';
+
+        (typeof  obj.interval !== 'undefined') ?
+            intervals = obj.intervals : '';
+
+        
+        type = (typeof obj !== 'undefined' && typeof obj != null) ? obj.type : type;
+
+        if(type === '3D'){
+            this.Esliders._3D.setCurrentSlide(1);
+            this.Esliders._3D.slider('');
+        }else if(type === 'H'){
+            this.Esliders.horizontalSlider.init();
+        }else if(type === 'fade'){
+
+            (typeof obj.colored && obj.colored != null) ? colored = true : colored = false;
+            this.Esliders.fade.init();
+        }else if(type === "B"){
+            /**
+             * @type {B:backfade}
+             */
+            if(typeof obj.e !== 'undefined')
+            {
+                imageArray = obj.images;
+                images = obj.e;
+                this.Esliders.backFade.init();
+            }
+        }
+    };
+
+    ex.log = function(smg){
+        return console.log(smg);
+    };
+
+    ex.disableClick = function(){
+        this.on('click',function () {
+            return false;
+        })
+    };
+
+    ex.submit = function(){
+        this.element.submit();
+    };
+
+    ex.isNotEmpty = function(){
+        return (this.element.value.length > 0);
+    };
 
     return ex;
 };
@@ -2488,7 +2745,7 @@ Exile = function (selector) {
 
 /**
  initiating the library and its inner libraries
-*/
+ */
 
 var $$ = function(selector){
     return Exile(selector);
