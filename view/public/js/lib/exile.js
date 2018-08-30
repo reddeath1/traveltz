@@ -2673,7 +2673,7 @@ Exile = function (selector) {
 
         slider:function(){
             if(typeof imageArray[Index] !== 'undefined'){
-                var url = (ex.addr().path[1] === 'traveltz') ? ex.addr().url+''+ex.addr().path[1]+'/' : ex.addr();
+                var url = (ex.addr().path[1] === 'traveltz') ? ex.addr().url+''+ex.addr().path[1]+'/' : ex.addr().url;
 
                 var img = url+'/view/public/images/'+imageArray[Index];
 
