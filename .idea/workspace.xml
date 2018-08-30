@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/public/js/lib/exile.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/lib/exile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +23,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="e#0#93#0" expanded="true" />
                 <element signature="e#902#1297#0" expanded="true" />
+                <element signature="e#1645#1726#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
@@ -499,10 +497,10 @@
         <option value="$PROJECT_DIR$/view/result.php" />
         <option value="$PROJECT_DIR$/view/filter.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/view/public/js/main.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
         <option value="$PROJECT_DIR$/view/public/css/style.css" />
+        <option value="$PROJECT_DIR$/view/public/js/main.js" />
       </list>
     </option>
   </component>
@@ -779,7 +777,7 @@
       <workItem from="1535151460733" duration="5142000" />
       <workItem from="1535450118649" duration="8205000" />
       <workItem from="1535536050985" duration="74000" />
-      <workItem from="1535661194606" duration="3693000" />
+      <workItem from="1535661194606" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -851,17 +849,31 @@
       <option name="project" value="LOCAL" />
       <updated>1535456620168</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added a slide show for banner">
+      <created>1535665020479</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535665020479</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added a slide show for banner">
+      <created>1535665232765</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1535665232765</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25430000" />
+    <option name="totallyTimeSpent" value="25842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -870,7 +882,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Designer" order="2" />
@@ -909,7 +921,8 @@
     <MESSAGE value="[Debugging]" />
     <MESSAGE value="[Debugging] live site" />
     <MESSAGE value="Added some restriction to the view and filtered data from the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some restriction to the view and filtered data from the database" />
+    <MESSAGE value="added a slide show for banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a slide show for banner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -937,6 +950,7 @@
           <folding>
             <element signature="e#0#93#0" expanded="true" />
             <element signature="e#902#1297#0" expanded="true" />
+            <element signature="e#1645#1726#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1265,17 +1279,6 @@
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
             <element signature="e#195#200#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-            <element signature="e#902#1297#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1636,6 +1639,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#902#1297#0" expanded="true" />
+            <element signature="e#1645#1726#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

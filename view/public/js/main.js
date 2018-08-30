@@ -74,7 +74,7 @@ Ttz.CheckAvailability =function(el){
      */
     _T.CheckAvailability($('.btn-banner'));
 
-    $$().slide({
+    $().slide({
         type:'B',
         e:'.banner',
         images:['hero.jpg','img.jpg','hero1.jpg']});
