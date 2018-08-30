@@ -77,6 +77,6 @@ Ttz.CheckAvailability =function(el){
     $$().slide({
         type:'B',
         e:'.banner',
-        images:['hero.jpg','img.jpg']});
+        images:['hero.jpg','img.jpg','hero1.jpg']});
 
 })($$,http,Ttz);
