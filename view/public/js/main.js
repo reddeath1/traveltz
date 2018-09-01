@@ -63,7 +63,8 @@ Ttz.getAvailabilityResults = function(filter) {
             to = $$('#to').value().toLowerCase(),
             d = $$('#date-picker').value(),
             sort = '',
-            filt = '';
+            filt = '',
+            holder = $$('.result');
 
         if (typeof filter !== 'undefined') {
             filt = (typeof filter.filter !== 'undefined'
@@ -79,9 +80,13 @@ Ttz.getAvailabilityResults = function(filter) {
             if ($$().http.state(this))
                 var r = $$().http.data(this);
 
-            if(typeof r !== 'undefined')
-            {
-                console.log(r);
+            if (typeof r !== 'undefined') {
+
+                (typeof r.data !== 'undefined')
+                    ?
+                    holder.html(r.data)
+                   :
+                    holder.html("<div style='text-align: center;width: 100%;float: left;color: white;'>" + r.message + "</div>");
             }
         }
     })
@@ -172,6 +177,7 @@ Ttz.URi = function () {
      */
     $('.both').on('change',function(){
         if(this.type=='checkbox' && this.checked==true) {
+            filt = '';
             $().each('.checks', function (item, index) {
 
                 var v = item.value.toUpperCase();

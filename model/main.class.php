@@ -34,20 +34,75 @@ class Main extends connection {
         $sort = $params->sort;
         $filter = $params->filter;
         $limit = $params->limit;
+        $data = array();
 
-        $params = array('table'=>'bus','routine'=>'table_name','table2'=>'table_name','alias'=>'r','alias1'=>'t',
-            'alias2'=>'u',
-            'field'=>array('*'),
-            'foreign'=>array('r.t_id'=>'t.id'),'foreign1'=>array('r.t_id'=>'u.t_id'),
-            'args'=>array(),'like'=>"f.features LIKE %$filter%",
-            'align'=>'ORDER BY t.id','limit'=>$limit,
-            'state'=>'AAL');
+        if($sort === '1'){
+            $sort = "ORDER BY route ASC";
+        }elseif ($sort === '2'){
+            $sort = "ORDER BY sc.cost ASC";
+        }elseif ($sort === '3'){
+            $sort = "ORDER BY r.dep_date ASC";
+        }elseif ($sort === '4') {
+            $sort = "ORDER BY b.id DESC";
+        } else{
+            $sort = '';
+        }
 
-        $data = $this->get($this->encode($params));
+        $filter = (!empty($filter)) ? "AND b.features LIKE '$filter'" : '';
+
+
+        $sql = $this->conn->query("SELECT * FROM (SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b 
+LEFT JOIN company as co ON(b.co_id = co.id)
+LEFT JOIN routes as r ON(r.bus_id = b.id) 
+LEFT JOIN location as r1 ON (r.r1 = r1.id)
+LEFT JOIN location as r2 ON(r.r2 = r2.id)
+LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
+
+WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
+$sort) as rd GROUP BY bid");
+        
+        if($sql->num_rows > 0){
+            while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+        }
+
+        return $data;
+    }
+
+    public function get_av_seats($bid){
+
+        $data = 0;
+
+
+        $sql = $this->conn->query("SELECT count(id) as c FROM tickets WHERE bus_id = '$bid'");
+
+        if($sql->num_rows > 0){
+            while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                $data = $row['c'];
+            }
+        }
+
+        return $data;
     }
 
     public function encode($data){
         return json_encode($data);
+    }
+
+    /**
+     * Get url
+     */
+    public function Url(){
+        $page_url   = 'http';
+
+        (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? $page_url .= 's' : $page_url;
+
+        $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
+
+        (preg_match('/(localhost)/', $name)) ? $name .= '/traveltz' : $name;
+
+        return $name;
     }
 
     public function decode($data){

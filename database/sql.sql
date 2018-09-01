@@ -15,20 +15,11 @@ CREATE TABLE IF NOT EXISTS bus (
     name text,
     bus_no varchar (255) NOT NULL,
     co_id int(11) NOT NULL,
-    features enum('TV','AC','CHARGE','DRINKS','TOILET','WIFI','TV,AC,CHARGE,DRINKS,TOILET,WIFI','TV,AC','TV,CHARGE','TV,DRINKS','TV,TOILET','TV,WIFI','AC,TV','AC,CHARGE','AC,DRINKS','AC,TOILET','AC,WIFI','CHARGE,TV','CHARGE,AC','CHARGE,DRINKS','CHARGE,TOILET','CHARGE,WIFI','DRINKS,TV','DRINKS,AC','DRINKS,CHARGE','DRINKS,TOILET','DRINKS,WIFI','TOILET,TV','TOILET,AC','TOILET,CHARGE','TOILET,DRINKS','TOILET,WIFI','WIFI,TV','WIFI,AC','WIFI,DRINKS','WIFI,CHARGE','WIFI,TOILET') not null default '',
+    features varchar (255) not null,
     seats_count int(11) NOT NULL,
 	primary key(id),
 	foreign key(co_id) references company(id)
 )ENGINE=INNODB;
-
-CREATE TABLE IF NOT EXISTS routine (
-    id int(11) auto_increment NOT NULL,
-    bus_id int(11) NOT NULL,
-    dep_date datetime not null ,
-	primary key(id),
-	foreign key(bus_id) references bus(id)
-)ENGINE=INNODB;
-	
 
 CREATE TABLE IF NOT EXISTS users (
     id int(11) auto_increment NOT NULL,
@@ -58,7 +49,10 @@ CREATE TABLE IF NOT EXISTS routes (
     id int(11) auto_increment NOT NULL,
     r1 int(11) NOT NULL,
     r2 int(11) NOT NULL,
+	  bus_id int(11) NOT NULL,
+    dep_date datetime not null ,
 	primary key(id),
+	foreign key(bus_id) references bus(id),
 	foreign key(r1) references location(id),
 	foreign key(r2) references location(id)
 )ENGINE=INNODB;
@@ -66,16 +60,14 @@ CREATE TABLE IF NOT EXISTS routes (
 
 CREATE TABLE IF NOT EXISTS seats (
     id int(11) auto_increment NOT NULL,
-    sno int(11) NOT NULL,
+    sno varchar (255) NOT NULL,
 	primary key(id)
 )ENGINE=INNODB;
 
 CREATE TABLE IF NOT EXISTS bus_features(
 id int(11) auto_increment not null,
-	amenities enum('0','1','2','3','4') not null default '0',
-	bus_id int(11) not null,
-	primary key(id),
-	foreign key(bus_id) references bus(id)
+	amenities varchar (255) not null ,
+	primary key(id)
 ) ENGINE=INNODB;
 
 CREATE TABLE IF NOT EXISTS seat_costs (
@@ -109,7 +101,7 @@ CREATE TABLE IF NOT EXISTS seat_status (
 
 CREATE TABLE IF NOT EXISTS tickets (
     id int(11) auto_increment NOT NULL,
-    tno int(11) NOT NULL,
+    tno varchar (255) NOT NULL,
     ticket text NOT NULL,
     qr text NOT NULL,
     checkin enum('0','1') DEFAULT '0' NOT NULL,
