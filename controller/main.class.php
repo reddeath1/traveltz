@@ -25,5 +25,14 @@ class Main extends connection {
      return $data;
  }
 
+
+    public function encode($data){
+        return json_encode($data);
+    }
+
+    public function decode($data){
+        return json_decode($data);
+    }
+
 }
 ?>

@@ -21,7 +21,7 @@ Exile = function (selector) {
         resizing = false,
         isConnected = 0,
         connetion = null,
-        sasha,
+        array = [],
         url = null,
         slides,
         angle = 0,
@@ -305,7 +305,7 @@ Exile = function (selector) {
         let
             e = this.element;
 
-        if(typeof name !== 'undefined' && typeof value !== 'undefined'){console.log(name)
+        if(typeof name !== 'undefined' && typeof value !== 'undefined'){
             return e.setAttribute(name,value);
         }else
         if(name !== null || name !== ''
@@ -1922,14 +1922,13 @@ Exile = function (selector) {
                         b.css({overflow:'auto'});
                     },200);
 
-                    let sasha = window.sasha;
 
-                    sasha.response({
+                    ex.http.response({
                         meth:'POST',
                         url:lnk+'includes/delete.php',
                         query:'action=cancelFiles&file='+file,
                         success:function(){
-                            if(sasha.state(this)){
+                            if(ex.http.state(this)){
                                 let r = JSON.parse(this.response);
                                 if(r.state === 'deleted'){
                                     $$().log(r.state);
@@ -2184,7 +2183,7 @@ Exile = function (selector) {
 
         if (e.readyState === 1){
             e.onerror = function () {
-                sasha.onResponse("Error","Connection failed. Please try again","OK");
+                ex.http.onResponse("Error","Connection failed. Please try again","OK");
             }
         }
 
@@ -2322,10 +2321,10 @@ Exile = function (selector) {
                 con.onreadystatechange = callback;
 
                 setTimeout(function(){
-                    sasha.onMessage(objs);
+                    ex.http.onMessage(objs);
                 },interval);
 
-                sasha.send(con,query,meth);
+                ex.http.send(con,query,meth);
             }
         }else{
             console.log("Connection Failed");
@@ -2393,7 +2392,7 @@ Exile = function (selector) {
 
         con.onreadystatechange = callback;
 
-        sasha.send(con,query,meth);
+        ex.http.send(con,query,meth);
     };
 
     /**
@@ -2419,7 +2418,7 @@ Exile = function (selector) {
      * @returns {any}
      */
     ex.http.data = function(target){
-        return JSON.parse(target.data);
+        return (typeof target.data !== 'undefined') ? JSON.parse(target.data) : JSON.parse(target.response);
     };
 
     /**
@@ -2679,7 +2678,6 @@ Exile = function (selector) {
 
                 images.css({backgroundImage:'url("'+img+'")',backgroundSize:'cover'});
 
-                console.log(images.element)
                 Index++;
                 if (Index >= imageArray.length) {
                     Index = 0;
@@ -2737,6 +2735,35 @@ Exile = function (selector) {
 
     ex.isNotEmpty = function(){
         return (this.element.value.length > 0);
+    };
+
+
+    /**
+     * Get Url parameters
+     * @param name
+     * @returns {*}
+     */
+    ex.get = function(name){
+        var results = '';
+        if(typeof name !== 'undefined' && name !== null){
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            results = regex.exec(location.search);
+        }
+
+        return results === null ? results : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+    
+    ex.array = {
+
+
+        add:function (obj){
+            (typeof obj !== 'undefined') ? obj.list.push(obj.data) : '';
+        },
+
+        remove:function(obj){
+            (typeof obj !== 'undefined') ? obj.list.splice(0,obj.item) : '';
+        }
     };
 
     return ex;

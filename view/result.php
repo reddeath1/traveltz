@@ -29,8 +29,8 @@ if($default_from === $default_from_id)
 			<div class="col-lg-2">
 				<div class="sidebar">
 
-					<select class="custom-select mb-2" id="inputGroupSelect01">
-    <option selected>Sort by</option>
+					<select class="custom-select mb-2 sorts" id="inputGroupSelect01">
+    <option value="">Sort by</option>
     <option value="1">Alphabetical</option>
     <option value="2">Price</option>
     <option value="3">Time</option>
@@ -41,28 +41,32 @@ if($default_from === $default_from_id)
 						<div class="filter-border-root mb-2"></div>
 						<div class="filters-0">
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck1">
+								<input type="checkbox" value="tv" class="custom-control-input checks" id="customCheck1">
 								<label class="custom-control-label" for="customCheck1">TV</label>
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck2">
+								<input type="checkbox" value="ac" class="custom-control-input checks" id="customCheck2">
 								<label class="custom-control-label" for="customCheck2">AC</label>
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck3">
+								<input type="checkbox" value="charge" class="custom-control-input  checks" id="customCheck3">
 								<label class="custom-control-label" for="customCheck3">CHARGE</label>
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck4">
+								<input type="checkbox" value="drinks" class="custom-control-input checks" id="customCheck4">
 								<label class="custom-control-label" for="customCheck4">DRINKS</label>
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck5">
+								<input type="checkbox" value="toilet" class="custom-control-input  checks" id="customCheck5">
 								<label class="custom-control-label" for="customCheck5">TOILET</label>
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
-								<input type="checkbox" class="custom-control-input" id="customCheck6">
+								<input type="checkbox" value="wifi" class="custom-control-input checks" id="customCheck6">
 								<label class="custom-control-label" for="customCheck6">WI-FI</label>
+							</div>
+							<div class="custom-control custom-checkbox mb-2">
+								<input type="checkbox" value="" class="custom-control-input both" id="customCheck7">
+								<label class="custom-control-label" for="customCheck7">BOTH</label>
 							</div>
 						</div>
 					</div>

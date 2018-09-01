@@ -15,6 +15,15 @@ include_once (__DIR__.'/model/Locations.php');
 class Index {
     public function __construct(){
 
+        if(isset($_POST['action']) && $_POST['action'] === 'getAVResults'){
+            echo json_encode(array('status'=>'hahahaha'));
+        }
+
+        
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            die();
+        }
+
 
         /**
          * Load modules
