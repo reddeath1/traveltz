@@ -74,7 +74,7 @@ Ttz.getAvailabilityResults = function(filter) {
     $$().http.response({
         meth: 'post',
         url: this.URi(),
-        query: 'action=getAVResults&d=' + d + '&from=' + from + '&to=' + to + '&sort=' + sort + '&filter=' + filt,
+        query: 'action=get_av_results&d=' + d + '&from=' + from + '&to=' + to + '&sort=' + sort + '&filter=' + filt,
         success: function () {
             if ($$().http.state(this))
                 var r = $$().http.data(this);
@@ -86,10 +86,11 @@ Ttz.getAvailabilityResults = function(filter) {
         }
     })
 
-    }else if($$('#from').value() === $$('#to').value()){
+    }else if(
+        $$('#from').isNotEmpty()
+        && $$('#to').isNotEmpty()
+        && $$('#from').value() === $$('#to').value()){
         alert("Sorry there is no bus going that route");
-    }else{
-        alert("All fields are required!");
     }
 } ;
 
@@ -170,16 +171,22 @@ Ttz.URi = function () {
      * @filter get both filtered options value
      */
     $('.both').on('change',function(){
-        if(this.type=='checkbox' && this.checked==true)
-            $().each('.checks',function(item,index){
-                
+        if(this.type=='checkbox' && this.checked==true) {
+            $().each('.checks', function (item, index) {
+
                 var v = item.value.toUpperCase();
                 item.checked = true;
-                filt += v+',';
+                filt += v + ',';
             });
 
-        _T.getAvailabilityResults({filter:filt,sort:$('.sorts').value().toLowerCase()});
+            _T.getAvailabilityResults({filter: filt, sort: $('.sorts').value().toLowerCase()});
 
+        }else {
+            $().each('.checks', function (item, index) {
+                item.checked = false;
+                filt = ',';
+            });
+        }
     });
 
     /**
@@ -187,7 +194,9 @@ Ttz.URi = function () {
      */
     if(typeof $('#from').element !== null)
         $('#from').on('change',function () {
-           _T.getAvailabilityResults();
+            if(this.value !== ''){
+                _T.getAvailabilityResults();
+            }
         });
 
     /**
@@ -195,7 +204,9 @@ Ttz.URi = function () {
      */
     if(typeof $('#to').element !== null)
         $('#to').on('change',function () {
-           _T.getAvailabilityResults();
+            if(this.value !== ''){
+                _T.getAvailabilityResults();
+            }
         });
 
     /**
@@ -203,7 +214,9 @@ Ttz.URi = function () {
      */
     if(typeof $('#date-picker').element !== null)
         $('#date-picker').on('change',function () {
-           _T.getAvailabilityResults();
+            if(this.value !== ''){
+                _T.getAvailabilityResults();
+            }
         });
 
 

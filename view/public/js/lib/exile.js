@@ -2418,7 +2418,11 @@ Exile = function (selector) {
      * @returns {any}
      */
     ex.http.data = function(target){
-        return (typeof target.data !== 'undefined') ? JSON.parse(target.data) : JSON.parse(target.response);
+        return (typeof target.data !== 'undefined') ?
+            JSON.parse(target.data) :
+            (typeof JSON.parse(target.response) !== 'undefined') ?
+                JSON.parse(target.response) : ''
+            ;
     };
 
     /**

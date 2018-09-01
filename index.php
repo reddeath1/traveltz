@@ -9,18 +9,14 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
 
-include_once (__DIR__.'/model/Locations.php');
+include_once (__DIR__ . '/controller/Locations.php');
 
 
 class Index {
     public function __construct(){
 
-        if(isset($_POST['action']) && $_POST['action'] === 'getAVResults'){
-            echo json_encode(array('status'=>'hahahaha'));
-        }
-
-        
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            include_once (__DIR__ . '/controller/requests.php');
             die();
         }
 

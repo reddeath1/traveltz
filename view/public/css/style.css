@@ -36,22 +36,26 @@ h1,h2,h3,h4,h5,h6 {
     color: #fff;
    font-family: 'Raleway', serif;
 }
+
 .navbar-nav .nav-item .nav-link:hover{color:#FF5722;}
 .navbar-expand-md .navbar-nav .dropdown-menu{
 	border-top:3px solid #FF5722;
 }
+
 .dropdown-item:hover{background-color:#FF5722;color:#fff;}
+
 nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     -moz-transition: padding-top .3s,padding-bottom .3s;
     transition: padding-top .3s,padding-bottom .3s;
     border: none;
-	}
+}
 
  .shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #262626;
 }
+ 
 .banner{
 	background-image:url('../images/hero.jpg');
 	text-align: center;
@@ -64,7 +68,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     -o-background-size: cover;
     background-size: cover;
 	height: 700px;
-	animation: redd 1s linear 0s;
+	animation: redd .5s linear 0s;
 	transition:1s linear 0s;
 }
 

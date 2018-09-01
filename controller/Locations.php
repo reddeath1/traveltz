@@ -6,9 +6,9 @@
  * Time: 2:23 AM
  */
 
-$dir = str_replace('model','',__DIR__);
+$dir = str_replace('controller','',__DIR__);
 
-include_once ($dir.'controller/main.class.php');
+include_once ($dir.'model/main.class.php');
 class Locations extends Main
 {
 
