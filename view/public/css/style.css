@@ -388,6 +388,10 @@ hr {
 .image-0, .amenities, .route {
 	border-right: 1px solid #ccc;
 }
+.image-0, .amenities, .route {
+	font-weight: 400;
+    font-size: 16px;
+}
 .res-0 {
 	padding-bottom: 5px;
 }
