@@ -66,7 +66,8 @@ class Requests extends Main
             */
            $result = '';
            $data = $this->get_av_result($this->encode($params));
-            
+
+           
              $feature = '';
 
             if(count($data) > 0){
@@ -93,22 +94,32 @@ class Requests extends Main
                     if(preg_match("/tv/i", $features))
                     {
                         $feature .= '<ion-icon name="tv"></ion-icon>';
+                    }else{
+                        $feature = '';
                     }
 
                     if(preg_match("/ac/i", $features)){
 
+                    }else{
+                        $feature = '';
                     }
 
                     if(preg_match("/wifi/i", $features)){
                             $feature .= '<ion-icon ios="ios-wifi" md="md-wifi"></ion-icon>';
+                    }else{
+                        $feature = '';
                     }
 
                     if(preg_match("/drinks/i", $features)){
                         $feature .= '<ion-icon name="cafe"></ion-icon>';
+                    }else{
+                        $feature = '';
                     }
 
                     if(preg_match("/charge/i", $features)){
                         $feature .= '<ion-icon name="battery-charging"></ion-icon>';
+                    }else{
+                        $feature = '';
                     }
 
                     $logo = $this->url."/view/public/images/$logo";
