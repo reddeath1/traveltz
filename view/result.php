@@ -30,12 +30,12 @@ if($default_from === $default_from_id)
 				<div class="sidebar">
 
 					<select class="custom-select mb-2 sorts" id="inputGroupSelect01">
-    <option value="">Sort by</option>
-    <option value="1">Alphabetical</option>
-    <option value="2">Price</option>
-    <option value="3">Time</option>
-    <option value="3">Seats Available</option>
-  </select>
+						<option value="">Sort by</option>
+						<option value="1">Alphabetical</option>
+						<option value="2">Price</option>
+						<option value="3">Time</option>
+						<option value="3">Seats Available</option>
+					</select>
 					<div class="filters">
 						<h5>FILTERS</h5>
 						<div class="filter-border-root mb-2"></div>
@@ -66,7 +66,7 @@ if($default_from === $default_from_id)
 							</div>
 							<div class="custom-control custom-checkbox mb-2">
 								<input type="checkbox" value="" class="custom-control-input both" id="customCheck7">
-								<label class="custom-control-label" for="customCheck7">BOTH</label>
+								<label class="custom-control-label" for="customCheck7">ALL</label>
 							</div>
 						</div>
 					</div>
@@ -74,11 +74,11 @@ if($default_from === $default_from_id)
 				</div>
 			</div>
 			<div class="col-lg-10">
-                <?php include_once (__DIR__.'/filter.php');?>
+				<?php include_once (__DIR__.'/filter.php');?>
 
 				<div class="result">
-<!--                    result from the server holder-->
-                </div>
+					<!--                    result from the server holder-->
+				</div>
 			</div>
 		</div>
 	</div>
