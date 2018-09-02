@@ -122,7 +122,7 @@ class Requests extends Main
                         $feature = '';
                     }
 
-                    $logo = $this->url."/view/public/images/$logo";
+                    $logo = $this->url."/view/public/images/busLogo/$logo";
                     $time = date('H:i',strtotime($depature)).'Hrs';
 
                     (!empty($bid)) ? $result .= "<div class=\"container res-0\">

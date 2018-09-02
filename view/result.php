@@ -114,6 +114,7 @@ if($default_from === $default_from_id)
                         </div>
                     </div>
                 </div>
+                
 				<div class="result">
 					<!--                    result from the server holder-->
 				</div>
