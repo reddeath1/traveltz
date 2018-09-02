@@ -388,7 +388,7 @@ hr {
 .image-0, .amenities, .route {
 	border-right: 1px solid #ccc;
 }
-.image-0 h5 {
+.bus-number {
 	font-weight: 400;
     font-size: 16px;
 }
