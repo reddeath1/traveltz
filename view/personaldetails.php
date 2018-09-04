@@ -8,7 +8,7 @@
 							<label class="sr-only" for="inlineFormInputGroup">First Name</label>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<div class="input-group-text">27</div>
+									<div class="input-group-text">A1</div>
 								</div>
 								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="First Name">
 							</div>
@@ -25,7 +25,7 @@
 							<label class="sr-only" for="inlineFormInput">Email</label>
 							<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Email">
 						</div>
-<!--
+						<!--
 <div class="col-sm">
 	<select class="custom-select mb-2" id="inputGroupSelect02">
 		<option selected>Boarding Point</option>
@@ -41,7 +41,7 @@
 							<label class="sr-only" for="inlineFormInputGroup">First Name</label>
 							<div class="input-group mb-2">
 								<div class="input-group-prepend">
-									<div class="input-group-text">27</div>
+									<div class="input-group-text">A2</div>
 								</div>
 								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="First Name">
 							</div>
@@ -58,7 +58,7 @@
 							<label class="sr-only" for="inlineFormInput">Email</label>
 							<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Email">
 						</div>
-<!--
+						<!--
 <div class="col-sm">
 	<select class="custom-select mb-2" id="inputGroupSelect02">
 		<option selected>Boarding Point</option>
