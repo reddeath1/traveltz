@@ -56,7 +56,7 @@
 
 						function changeImg() {
 							if (image.getAttribute('src') == "/view/public/images/icons/seat-available.png") {
-								image.src = "/traveltz/view/public/images/icons/seat-selected.png";
+								image.src = "/view/public/images/icons/seat-selected.png";
 							} else {
 								image.src = "/view/public/images/icons/seat-available.png";
 							}
@@ -82,16 +82,16 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md">
-								<img src="/traveltz/view/public/images/icons/seat-booked.png"> Booked
+								<img src="/view/public/images/icons/seat-booked.png"> Booked
 							</div>
 							<div class="col-md">
-								<img src="/traveltz/view/public/images/icons/seat-available.png"> Available
+								<img src="/view/public/images/icons/seat-available.png"> Available
 							</div>
 							<div class="col-md">
-								<img src="/traveltz/view/public/images/icons/seat-unavailable.png"> Unavailable
+								<img src="/view/public/images/icons/seat-unavailable.png"> Unavailable
 							</div>
 							<div class="col-md">
-								<img src="/traveltz/view/public/images/icons/seat-selected.png"> Selected
+								<img src="/view/public/images/icons/seat-selected.png"> Selected
 							</div>
 						</div>
 					</div>
