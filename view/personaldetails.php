@@ -25,13 +25,6 @@
 							<label class="sr-only" for="inlineFormInput">Email</label>
 							<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Email">
 						</div>
-						<!--
-<div class="col-sm">
-	<select class="custom-select mb-2" id="inputGroupSelect02">
-		<option selected>Boarding Point</option>
-	</select>
-</div>
--->
 					</div>
 
 					<!--DUPLICATE OF THE FORM-->
