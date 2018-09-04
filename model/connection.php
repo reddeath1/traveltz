@@ -10,7 +10,7 @@ class connection{
     public function __construct(){
         $this->user = 'root';
         $this->pass = '';
-        $this->host = 'db4free.net:3306';
+        $this->host = 'db4free.net';
         $this->db = 'traveltz';
 
         
