@@ -67,12 +67,10 @@ class Requests extends Main
            $result = '';
            $data = $this->get_av_result($this->encode($params));
 
-           
-             $feature = '';
+            $feature = '';
 
             if(count($data) > 0){
 
-                
                 foreach ($data as $item) {
                     $bid = strtoupper($item['id']);
                     $company = strtoupper($item['company']);
@@ -154,6 +152,8 @@ class Requests extends Main
 					</div>
 				</div>" : $this->message = 'No records found';
                }
+            }else{
+               $this->message = "No records found!";
             }
 
             print_r((!empty($result) ? $this->encode(array('data'=>$result)) : ''));

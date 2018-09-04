@@ -198,6 +198,14 @@ Exile = function (selector) {
             return this.element.className;
         }
     };
+    /**
+     * @returns {string}
+     */
+    ex.id = function(){
+        if(this.element !== null){
+            return this.element.id;
+        }
+    };
 
     /**
      * @returns {string}
