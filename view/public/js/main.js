@@ -36,7 +36,7 @@ Ttz.StrictDate = function (el) {
     });
 };
 
-Ttz.CheckAvailability =function(el){
+Ttz.CheckAvailability = function(el){
     el.disableClick();
     el.on('mousedown',function () {
         ($$('#date-picker').isNotEmpty() &&
@@ -99,6 +99,19 @@ Ttz.getAvailabilityResults = function(filter) {
     }
 } ;
 
+
+Ttz.swapVAlue = function(){
+  $$('.swap').on('click',function(){
+      var to = $$('#to').value(),
+          from = $$('#from').value();
+
+      $$('#from').value(to);
+      $$('#to').value(from);
+
+      Ttz.getAvailabilityResults();
+  });
+};
+
 Ttz.URi = function () {
 
     return ($$().addr().path[1] === 'traveltz') ? $$().addr().url+''+$$().addr().path[1]+'/' : $$().addr().url;
@@ -126,6 +139,7 @@ Ttz.URi = function () {
      */
     _T.CheckAvailability($('.btn-banner'));
 
+    _T.swapVAlue();
 
     /**
      * Use the slider
