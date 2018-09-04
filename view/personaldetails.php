@@ -25,11 +25,13 @@
 							<label class="sr-only" for="inlineFormInput">Email</label>
 							<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Email">
 						</div>
-						<div class="col-sm">
-							<select class="custom-select mb-2" id="inputGroupSelect02">
-    							<option selected>Boarding Point</option>
-  							</select>
-						</div>
+<!--
+<div class="col-sm">
+	<select class="custom-select mb-2" id="inputGroupSelect02">
+		<option selected>Boarding Point</option>
+	</select>
+</div>
+-->
 					</div>
 
 					<!--DUPLICATE OF THE FORM-->
@@ -56,11 +58,13 @@
 							<label class="sr-only" for="inlineFormInput">Email</label>
 							<input type="email" class="form-control mb-2" id="inlineFormInput" placeholder="Email">
 						</div>
-						<div class="col-sm">
-							<select class="custom-select mb-2" id="inputGroupSelect02">
-    							<option selected>Boarding Point</option>
-  							</select>
-						</div>
+<!--
+<div class="col-sm">
+	<select class="custom-select mb-2" id="inputGroupSelect02">
+		<option selected>Boarding Point</option>
+	</select>
+</div>
+-->
 					</div>
 				</form>
 			</div>
@@ -77,8 +81,8 @@
 							<div class="modal-header">
 								<h5 class="modal-title" id="exampleModalCenterTitle">login</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+									<span aria-hidden="true">&times;</span>
+								</button>
 							</div>
 							<div class="modal-body">
 								<form>
@@ -94,30 +98,8 @@
 									</div>
 									<div class="mb-2">
 										<a href="<?php echo $url;?>/signup/">I don't have an account.</a>
-										<hr>
 									</div>
 								</form>
-								<div class="comtainer">
-									<div class="row">
-										<div class="col-sm">
-											Or login with:
-										</div>
-										<div class="col-sm">
-											<a href="https://www.instagram.com/">
-												<ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-											</a>
-											<a href="https://twitter.com/">
-												<ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
-											</a>
-											<a href="https://www.facebook.com/">
-												<ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-											</a>
-											<a href="https://www.facebook.com/">
-												<ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon>
-											</a>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>

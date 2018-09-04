@@ -131,16 +131,18 @@ class Requests extends Main
 							<div class=\"row text-center\">
 								<div class=\"col-sm image-0\">
 									<img src=\"$logo\" class=\"rounded img-fluid\" alt=\"$bus_name\">
-									<h6 class=\"mt-3\">$company</h6>
-                                    <p class=\"mt-1 bus-number\">$bus_no</p>
+									<h6 class=\"mt-2\">$company</h6>
+                                 	<p class=\"bus-number\">$bus_no</p>
 								</div>
 								<div class=\"col-sm route\">
-									<p class=\"mt-3\">ROUTE:<strong> $route </strong></p>
-									<p>DEPARTURE TIME: <strong>$time</strong></p>
+									<p class=\"mt-2\">ROUTE:<br><strong> $route </strong></p>
+
+									<p>DEPARTURE TIME:<br><strong>$time</strong></p>
+									<p>ETA:&nbsp;<strong>4Hrs</strong></p>
                                     </div>
 								<div class=\"col-sm amenities mt-2\">
 									$feature
-									<p class=\"mt-3\"><strong>PRICE:&nbsp;</strong>Starts from&nbsp;<strong>$price</strong></p>
+									<p class=\"mt-2\"><strong>PRICE:<br></strong>Starts from&nbsp;<strong>$price</strong></p>
 									<p><strong>SEATS AVAILABLE:&nbsp;($available_seats)</strong></p>
 
 								</div>

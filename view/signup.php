@@ -1,7 +1,7 @@
-<div class="container-fluid login-body">
+<div class="container-fluid signup-body">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 offset-lg-3 login">
+			<div class="col-lg-6 offset-lg-3 signup">
 				<div class="card">
 					<div class="card-body">
 						<form>
@@ -25,12 +25,12 @@
 								<div class="form-group col-md-6">
 									<label for="gender">Gender</label>
 									<select id="gender" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
+										<option selected>Male</option>
+										<option>Female</option>
+									</select>
 								</div>
 								<div class="form-group col-md-6">
-									<label for="birthdate">Email</label>
+									<label for="birthdate">Date of birth</label>
 									<input type="email" class="form-control" id="birthdate" placeholder="Date of birth">
 								</div>
 								<div class="form-group col-md-6">
@@ -41,25 +41,8 @@
 									<label for="password2">Retype password</label>
 									<input type="password" class="form-control" id="password2" placeholder="Retype password">
 								</div>
-								<div class="form-group col-md-6">
-									<button class="btn btn-banner btn-block">SIGN UP</button>
-								</div>
-								<div class="form-group col-md-2 mt-2">
-									Or
-								</div>
-								<div class="form-group col-md-4 mt-2">
-									<a href="https://www.instagram.com/">
-										<ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-									</a>
-									<a href="https://twitter.com/">
-										<ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
-									</a>
-									<a href="https://www.facebook.com/">
-										<ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-									</a>
-									<a href="https://www.facebook.com/">
-										<ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon>
-									</a>
+								<div class="form-group col-md-12">
+									<button class="btn btn-banner btn-block btn-sm">SIGN UP</button>
 								</div>
 							</div>
 						</form>
