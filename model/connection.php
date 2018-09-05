@@ -26,6 +26,9 @@ class connection{
 
     private function connect(){
         
+
+        echo 'DB: '.$this->db;
+
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
