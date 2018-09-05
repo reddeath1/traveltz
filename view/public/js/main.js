@@ -70,6 +70,8 @@ Ttz.getAvailabilityResults = function(filter) {
             filt = (typeof filter.filter !== 'undefined'
                 && filter.filter !== null) ? filter.filter.substr(0, filter.filter.length - 1) : filt;
             sort = (typeof filter.sort !== 'undefined' && !$$().empty(filter.sort)) ? filter.sort : sort;
+        }else if(){
+
         }
 
     $$().http.response({
@@ -160,17 +162,37 @@ Ttz.URi = function () {
     /**
      * @sort get sort value
      */
-    $('.sorts').on('change',function(){
-           var  v = this.value.toLowerCase();
+
+    if($('.sorts').element !== null){
+
+        if($('.sorts').isNotEmpty()){
+            _T.getAvailabilityResults({sort:$('.sorts').element.value.toLowerCase(),filter:filt});
+        }
+
+        $('.sorts').on('change',function(){
+            var  v = this.value.toLowerCase();
 
 
-        _T.getAvailabilityResults({sort:v,filter:filt});
-    });
+            _T.getAvailabilityResults({sort:v,filter:filt});
+        });
+    }
 
     /**
      * @filter get filter options value
      */
     $().each('.checks',function(item,index){
+
+        if(item !== null){
+            var v = item.value.toUpperCase();
+            if(item.type=='checkbox' && item.checked==true)
+
+                filt += v+',';
+
+            else
+                filt = filt.replace(v,'');
+
+            _T.getAvailabilityResults({filter:filt,sort:$('.sorts').value().toLowerCase()});
+        }
 
         item.addEventListener('change',function(){
 
@@ -184,13 +206,15 @@ Ttz.URi = function () {
 
             _T.getAvailabilityResults({filter:filt,sort:$('.sorts').value().toLowerCase()});
         });
+
+
     });
 
     /**
      * @filter get both filtered options value
      */
     $('.both').on('change',function(){
-        if(this.type=='checkbox' && this.checked==true) {
+        if(this.type==='checkbox' && this.checked===true) {
             filt = '';
             $().each('.checks', function (item, index) {
 
@@ -208,6 +232,20 @@ Ttz.URi = function () {
             });
         }
     });
+
+    if($('.both').element !== null){
+        if($('.both').element.checked === true){
+            filt = '';
+            $().each('.checks', function (item, index) {
+
+                var v = item.value.toUpperCase();
+                item.checked = true;
+                filt += v + ',';
+            });
+
+            _T.getAvailabilityResults({filter: filt, sort: $('.sorts').value().toLowerCase()});
+        }
+    }
 
     /**
      * @search Listen for change state of the search vaule
