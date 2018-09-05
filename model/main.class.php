@@ -111,7 +111,7 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-        (preg_match('/(localhost)/', $name)) ? $name .= '/traveltz' : $name;
+        $name = (preg_match('/(localhost)/', $name)) ?  $name.'/traveltz' : $name;
 
         return $name;
     }

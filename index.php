@@ -73,9 +73,10 @@ class Index {
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-       $name = (preg_match('/(localhost)/', $name)) ? $name .= '/traveltz' : $name;
+       $name = (preg_match('/(localhost)/', $name)) ? $name .'/traveltz' : $name;
 
 
+       echo $name;
 
         return $name;
     }
