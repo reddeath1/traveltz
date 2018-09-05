@@ -54,10 +54,6 @@ class Index {
         $file = 'view/'.$action.'.php';
         
 
-
-         echo 'Loc';
-        print_r($locationss);
-
         if(!file_exists($file)){
             $file = 'view/home.php';
         }
