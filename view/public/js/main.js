@@ -85,6 +85,23 @@ Ttz.getAvailabilityResults = function(filter) {
             if($$('.sorts').element !== null && $$('.sorts').isNotEmpty()){
                 sort = $$('.sorts').element.value.toLowerCase();
             }
+
+            /**
+             * @filter get filter options value
+             */
+            $$().each('.checks',function(item,index){
+                if(item !== null){
+                    var v = item.value.toUpperCase();
+                    if(item.type=='checkbox' && item.checked==true)
+
+                        filt += v+',';
+
+                    else
+                        filt = filt.replace(v,'');
+                }
+            });
+
+            filt = filt.substr(0, filt.length - 1)
         }
 
     $$().http.response({
