@@ -11,7 +11,7 @@ class connection{
         $this->user = 'c86qjllztzm11aex';
         $this->pass = 'f2lvmah9g0pga2d9';
         $this->host = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-        $this->db = 'traveltz';
+        $this->db = 'lgqwqt85l9jnps2m';
 
         
         if(preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
@@ -19,7 +19,7 @@ class connection{
             $this->host = 'localhost';
             ///$this->db = 'traveltz'; replace with your local db
             $this->user = 'root';
-            $this->pass = '';
+            $this->pass = 'traveltz';
         }
 
         $this->conn = $this->connect();

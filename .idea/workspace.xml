@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/errors/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/errors/404.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,24 +17,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#5#0#PHP" expanded="true" />
-                <element signature="n#Index#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/filter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#5#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="74" column="53" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -101,13 +83,35 @@
       <file leaf-file-name="connection.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="110">
+              <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
               <folding>
                 <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/main.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="159" column="7" lean-forward="true" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+              <folding>
+                <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="e#3857#4284#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/head.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="exile.js" pinned="false" current-in-tab="false">
@@ -441,7 +445,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="1586000" />
+      <workItem from="1536148103005" duration="2724000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -576,11 +580,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536074504386</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="server reconfiguration">
+      <created>1536184811387</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536184811387</updated>
+    </task>
+    <task id="LOCAL-00021" summary="server reconfiguration">
+      <created>1536185390217</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1536185390217</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84354000" />
+    <option name="totallyTimeSpent" value="85492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -592,8 +610,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -641,7 +659,8 @@
     <MESSAGE value="restored the missed part" />
     <MESSAGE value="[finished] The check availability section" />
     <MESSAGE value="added swap mechanism" />
-    <option name="LAST_COMMIT_MESSAGE" value="added swap mechanism" />
+    <MESSAGE value="server reconfiguration" />
+    <option name="LAST_COMMIT_MESSAGE" value="server reconfiguration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,13 +668,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -898,13 +910,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/traveltz.sql" />
-    <entry file="file://$PROJECT_DIR$/model/main.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="63" column="15" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/klmexpre_database.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -916,17 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#5#0#PHP" expanded="true" />
-            <element signature="n#Index#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,10 +991,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/main.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="159" column="7" lean-forward="true" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+          <folding>
+            <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="e#3857#4284#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/head.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="110">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
           <folding>
             <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
           </folding>
