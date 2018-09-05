@@ -28,7 +28,7 @@ class connection{
     private function connect(){
         
 
-         echo 'DB: '.$this->host;
+         // echo 'DB: '.$this->host;
 
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
@@ -36,7 +36,7 @@ class connection{
 
 
 
-        if($sql->connect_error){
+       /* if($sql->connect_error){
 
 
             echo 'Connection error';
@@ -45,7 +45,7 @@ class connection{
 
             echo 'Success';
         }
-
+*/
 
         //var_dump($sql);
 

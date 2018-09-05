@@ -6,8 +6,6 @@
  * Time: 2:00 PM
  */
 
-echo 'Loc '.$location_names;
-
 
 ?>
 
