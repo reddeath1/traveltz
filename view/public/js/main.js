@@ -71,7 +71,7 @@ Ttz.getAvailabilityResults = function(filter) {
                 && filter.filter !== null) ? filter.filter.substr(0, filter.filter.length - 1) : filt;
             sort = (typeof filter.sort !== 'undefined' && !$$().empty(filter.sort)) ? filter.sort : sort;
         }else{
-            if($('.both').element !== null && $('.both').element.checked === true){
+            if($$('.both').element !== null && $$('.both').element.checked === true){
                 filt = '';
                 $$().each('.checks', function (item, index) {
 
@@ -82,8 +82,8 @@ Ttz.getAvailabilityResults = function(filter) {
 
             }
 
-            if($('.sorts').element !== null && $('.sorts').isNotEmpty()){
-                sort = $('.sorts').element.value.toLowerCase();
+            if($$('.sorts').element !== null && $$('.sorts').isNotEmpty()){
+                sort = $$('.sorts').element.value.toLowerCase();
             }
         }
 
