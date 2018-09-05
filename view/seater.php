@@ -48,7 +48,7 @@
 						}
 
 						?>
-							<div class="col-xs"><img src="/view/public/images/icons/seat-available.png" id="seatImg" onclick="changeImg()"></div>
+							<div class="col-xs"><img src="/view/public/images/icons/seat-unavailable.png" id="" onclick="changeImg()"></div>
 						</div>
 					</div>
 					<script>
