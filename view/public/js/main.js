@@ -70,6 +70,21 @@ Ttz.getAvailabilityResults = function(filter) {
             filt = (typeof filter.filter !== 'undefined'
                 && filter.filter !== null) ? filter.filter.substr(0, filter.filter.length - 1) : filt;
             sort = (typeof filter.sort !== 'undefined' && !$$().empty(filter.sort)) ? filter.sort : sort;
+        }else{
+            if($('.both').element !== null && $('.both').element.checked === true){
+                filt = '';
+                $$().each('.checks', function (item, index) {
+
+                    var v = item.value.toUpperCase();
+                    item.checked = true;
+                    filt += v + ',';
+                });
+
+            }
+
+            if($('.sorts').element !== null && $('.sorts').isNotEmpty()){
+                sort = $('.sorts').element.value.toLowerCase();
+            }
         }
 
     $$().http.response({
@@ -163,10 +178,6 @@ Ttz.URi = function () {
 
     if($('.sorts').element !== null){
 
-        if($('.sorts').isNotEmpty()){
-            _T.getAvailabilityResults({sort:$('.sorts').element.value.toLowerCase(),filter:filt});
-        }
-
         $('.sorts').on('change',function(){
             var  v = this.value.toLowerCase();
 
@@ -209,21 +220,6 @@ Ttz.URi = function () {
     });
 
     if($('.both').element !== null){
-
-        if($('.both').element.checked === true){
-            filt = '';
-            $().each('.checks', function (item, index) {
-
-                var v = item.value.toUpperCase();
-                item.checked = true;
-                filt += v + ',';
-            });
-
-            _T.getAvailabilityResults({filter: filt, sort: $('.sorts').value().toLowerCase()});
-        }
-
-
-
         /**
          * @filter get both filtered options value
          */
