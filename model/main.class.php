@@ -109,15 +109,12 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
     public function Url(){
         $page_url   = 'http';
 
-        (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? $page_url .= 's' : $page_url;
+        (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? $page_url .= 's' : $page_url = $page_url;
 
-        if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on'){
-            echo "Yes";
-        }
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-        $name = (preg_match('/(localhost)/', $name)) ?  $name.'/traveltz' : $name;
+        $name = (preg_match('/(localhost)/', $name)) ?  $name.'/traveltz' : (preg_match('/(herokuapp)/', $name)) ? $page_url.'://'.$_SERVER['SERVER_NAME'] : $name;
 
         return $name;
     }

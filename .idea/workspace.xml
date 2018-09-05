@@ -80,13 +80,13 @@
       <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="378">
+              <caret line="116" column="162" selection-start-line="116" selection-start-column="162" selection-end-line="116" selection-end-column="162" />
               <folding>
+                <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
-                <element signature="n#Url#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="e#3857#4284#0#PHP" expanded="true" />
               </folding>
@@ -485,7 +485,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="4567000" />
+      <workItem from="1536148103005" duration="5021000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -704,11 +704,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536187546120</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="[debugging]">
+      <created>1536187772562</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1536187772562</updated>
+    </task>
+    <task id="LOCAL-00033" summary="[debugging]">
+      <created>1536188031090</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1536188031090</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87335000" />
+    <option name="totallyTimeSpent" value="87789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -720,8 +734,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1137,13 +1151,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="378">
+          <caret line="116" column="162" selection-start-line="116" selection-start-column="162" selection-end-line="116" selection-end-column="162" />
           <folding>
+            <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
-            <element signature="n#Url#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="e#3857#4284#0#PHP" expanded="true" />
           </folding>
