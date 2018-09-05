@@ -19,7 +19,6 @@ class connection{
             $this->db = 'klmexpre_database';
             $this->user = 'klmexpre_dbuser';
             $this->pass = '8T88n3PLopK2';
-            $this->host = 'chui.tanzaniawebhosting.com';
         }
 
         $this->conn = $this->connect();
@@ -28,26 +27,10 @@ class connection{
     private function connect(){
         
 
-         // echo 'DB: '.$this->host;
-
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
 
-
-
-       /* if($sql->connect_error){
-
-
-            echo 'Connection error';
-
-        }else{
-
-            echo 'Success';
-        }
-*/
-
-        //var_dump($sql);
 
         return $sql;
     }
