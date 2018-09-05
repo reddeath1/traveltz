@@ -45,7 +45,7 @@ class Index {
         $default_from = '';
         $default_to = '';
 
-
+        echo $url;
         include_once('header.php');
         (isset($_GET['action']) && !empty($_GET['action'])) ? $action = $_GET['action'] : $action = '';
         (isset($_GET['q']) && $_GET['q'])  ? $q = htmlentities($_GET['q']) : $q = '';
