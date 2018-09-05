@@ -70,8 +70,6 @@ Ttz.getAvailabilityResults = function(filter) {
             filt = (typeof filter.filter !== 'undefined'
                 && filter.filter !== null) ? filter.filter.substr(0, filter.filter.length - 1) : filt;
             sort = (typeof filter.sort !== 'undefined' && !$$().empty(filter.sort)) ? filter.sort : sort;
-        }else if(){
-
         }
 
     $$().http.response({
