@@ -11,6 +11,7 @@ class connection{
         $this->user = 'root';
         $this->pass = '';
         $this->host = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+//        $this->host = 'localhost';
         $this->db = 'traveltz';
 
         
