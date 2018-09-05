@@ -20,6 +20,10 @@ class Main extends connection {
 
         }
 
+
+        echo 'DB data</br>';
+        print_r($data);
+
      $sql->free();
 
      return $data;
