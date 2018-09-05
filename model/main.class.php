@@ -1,4 +1,6 @@
 <?php 
+
+
 include_once 'connection.php';
 class Main extends connection {
 
@@ -19,6 +21,8 @@ class Main extends connection {
             for ($data = array(); $row = $sql->fetch_array(MYSQLI_ASSOC); $data[] = $row) ;
 
         }
+
+
 
      $sql->free();
 
@@ -69,6 +73,10 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
             }
         }
+
+
+
+
 
         return $data;
     }

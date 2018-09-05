@@ -18,6 +18,9 @@ class Locations extends Main
     }
 
     public function getLocations($str = ''){
+
+
        return parent::getLocations($str);
+
     }
 }
