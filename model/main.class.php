@@ -6,6 +6,8 @@ class Main extends connection {
 
     public function __construct(){
         parent::__construct();
+        
+        echo $this->Url();
     }
 
     public function getLocations($str = ''){
