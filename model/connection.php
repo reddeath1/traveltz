@@ -30,6 +30,9 @@ class connection{
 
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
 
+
+        var_dump($sql);
+
         return $sql;
     }
 }
