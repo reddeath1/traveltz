@@ -28,7 +28,7 @@ class connection{
     private function connect(){
         
 
-        // echo 'DB: '.$this->db;
+         echo 'DB: '.$this->host;
 
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
