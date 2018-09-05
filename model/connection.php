@@ -19,6 +19,7 @@ class connection{
             $this->db = 'klmexpre_database';
             $this->user = 'klmexpre_dbuser';
             $this->pass = '8T88n3PLopK2';
+            $this->host = 'chui.tanzaniawebhosting.com';
         }
 
         $this->conn = $this->connect();
@@ -39,6 +40,7 @@ class connection{
 
 
             echo 'Connection error';
+
         }else{
 
             echo 'Success';
