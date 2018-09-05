@@ -11,7 +11,7 @@ class connection{
         $this->user = 'root';
         $this->pass = '';
         $this->host = 'localhost';
-        $this->db = 'traveltz';
+        $this->db = 'klmexpre_database';
 
         
         if(!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI']))
@@ -31,7 +31,18 @@ class connection{
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
 
 
-        var_dump($sql);
+
+        if($sql->connect_error){
+
+
+            echo 'Connection error';
+        }else{
+
+            echo 'Success';
+        }
+
+
+        //var_dump($sql);
 
         return $sql;
     }
