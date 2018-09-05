@@ -46,16 +46,16 @@
 			</div>
 			<div class="carousel-item">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="/view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="/view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="/view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="/view/public/images/partner.png">
+					<img src="<?php echo $url;?>/view/public/images/partner.png">
 				</div>
 			</div>
 		</div>
