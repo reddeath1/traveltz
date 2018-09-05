@@ -75,6 +75,8 @@ class Index {
 
         (preg_match('/(localhost)/', $name)) ? $name .= '/traveltz' : $name;
 
+        echo $name;
+
         return $name;
     }
 }
