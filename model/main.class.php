@@ -77,8 +77,6 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
 
 
-        echo 'DB data</br>';
-        print_r($data);
 
         return $data;
     }
