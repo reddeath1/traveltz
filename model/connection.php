@@ -10,15 +10,15 @@ class connection{
     public function __construct(){
         $this->user = 'root';
         $this->pass = '';
-        $this->host = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+        $this->host = 'localhost';
         $this->db = 'traveltz';
 
         
         if(!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI']))
         {
-            $this->db = 'lgqwqt85l9jnps2m';
-            $this->user = 'c86qjllztzm11aex';
-            $this->pass = 'f2lvmah9g0pga2d9';
+            $this->db = 'klmexpre_database';
+            $this->user = 'klmexpre_dbuser';
+            $this->pass = '8T88n3PLopK2';
         }
 
         $this->conn = $this->connect();
