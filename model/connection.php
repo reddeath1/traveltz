@@ -11,7 +11,7 @@ class connection{
         $this->user = 'root';
         $this->pass = '';
         $this->host = 'localhost';
-        $this->db = 'klmexpre_database';
+        $this->db = 'traveltz';
 
         
         if(!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI']))
