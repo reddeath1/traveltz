@@ -4,9 +4,9 @@
  * Disable caches
  */
 
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
+//header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+//header("Cache-Control: post-check=0, pre-check=0", false);
+//header("Pragma: no-cache");
 
 
 include_once (__DIR__ . '/controller/Locations.php');
@@ -45,7 +45,6 @@ class Index {
         $default_from = '';
         $default_to = '';
 
-        echo $url;
         include_once('header.php');
         (isset($_GET['action']) && !empty($_GET['action'])) ? $action = $_GET['action'] : $action = '';
         (isset($_GET['q']) && $_GET['q'])  ? $q = htmlentities($_GET['q']) : $q = '';

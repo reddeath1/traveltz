@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="74" column="53" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="53" />
+            <state relative-caret-position="108">
+              <caret line="6" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="n#Index#0;n#!!top" expanded="true" />
+                <element signature="n#__construct#0;n#Index#0;n#!!top" expanded="true" />
+                <element signature="n#Url#0;n#Index#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#5#0#PHP" expanded="true" />
+                <element signature="n#nav#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#nav#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -28,18 +47,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1161">
               <caret line="88" column="116" selection-start-line="88" selection-start-column="109" selection-end-line="88" selection-end-column="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-              <folding>
-                <element signature="e#6#97#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -80,18 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,7 +106,14 @@
       </file>
       <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/head.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="exile.js" pinned="false" current-in-tab="false">
@@ -169,7 +171,6 @@
         <option value="$PROJECT_DIR$/view/public/css/style.css" />
         <option value="$PROJECT_DIR$/model/Post.php" />
         <option value="$PROJECT_DIR$/model/requests.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controller/Locations.php" />
         <option value="$PROJECT_DIR$/database/sql.sql" />
         <option value="$PROJECT_DIR$/model/main.class.php" />
@@ -181,6 +182,7 @@
         <option value="$PROJECT_DIR$/view/errors/404.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/model/connection.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -445,7 +447,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="2846000" />
+      <workItem from="1536148103005" duration="3290000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -601,11 +603,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536185926450</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="server reconfiguration">
+      <created>1536186048790</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536186048790</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[debugging]">
+      <created>1536186197473</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536186197473</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85614000" />
+    <option name="totallyTimeSpent" value="86058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -617,8 +633,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -667,7 +683,8 @@
     <MESSAGE value="[finished] The check availability section" />
     <MESSAGE value="added swap mechanism" />
     <MESSAGE value="server reconfiguration" />
-    <option name="LAST_COMMIT_MESSAGE" value="server reconfiguration" />
+    <MESSAGE value="[debugging]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[debugging]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -866,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -991,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1013,22 +1016,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/head.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="74" column="53" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="53" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#5#0#PHP" expanded="true" />
+            <element signature="n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="272">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="n#Index#0;n#!!top" expanded="true" />
+            <element signature="n#__construct#0;n#Index#0;n#!!top" expanded="true" />
+            <element signature="n#Url#0;n#Index#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
