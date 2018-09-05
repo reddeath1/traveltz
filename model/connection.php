@@ -10,13 +10,13 @@ class connection{
     public function __construct(){
         $this->user = 'root';
         $this->pass = '';
-        $this->host = 'https://db4free.net:3306';
+        $this->host = 'localhost';
         $this->db = 'traveltz';
 
         
         if(!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI']))
         {
-            $this->db = 'klmexpre_databas';
+            $this->db = 'klmexpre_database';
             $this->user = 'klmexpre_dbuser';
             $this->pass = '8T88n3PLopK2';
         }
