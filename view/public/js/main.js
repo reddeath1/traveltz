@@ -191,17 +191,6 @@ Ttz.URi = function () {
      */
     $().each('.checks',function(item,index){
 
-        if(item !== null){
-            var v = item.value.toUpperCase();
-            if(item.type=='checkbox' && item.checked==true)
-
-                filt += v+',';
-
-            else
-                filt = filt.replace(v,'');
-
-            _T.getAvailabilityResults({filter:filt,sort:$('.sorts').value().toLowerCase()});
-        }
 
         item.addEventListener('change',function(){
 
