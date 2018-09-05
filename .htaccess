@@ -26,9 +26,9 @@ RewriteRule result /view/result.php
 #RewriteCond %{REQUEST_FILENAME}\.php -f
 #RewriteRule ^/?(.*)/?([a-zA-Z0-9_]+|)$ /$1.php?action=$2 [L]
 
-RewriteRule 404 view/errors/404.php
+RewriteRule 404 /view/errors/404.php
 
-RewriteRule 403 view/errors/403.php
+RewriteRule 403 /view/errors/403.php
 
 ErrorDocument 404 /404
 

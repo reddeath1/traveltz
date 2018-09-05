@@ -8,19 +8,22 @@ class connection{
     private $db;
 
     public function __construct(){
-        $this->user = 'root';
-        $this->pass = '';
+        $this->user = 'c86qjllztzm11aex';
+        $this->pass = 'f2lvmah9g0pga2d9';
         $this->host = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
 //        $this->host = 'localhost';
         $this->db = 'traveltz';
 
         
-        if(!preg_match('/(traveltz)/i',$_SERVER['REQUEST_URI']))
+        if(!preg_match('/(localhost)/i',$_SERVER['REQUEST_URI']))
         {
-            $this->db = 'lgqwqt85l9jnps2m';
-            $this->user = 'c86qjllztzm11aex';
-            $this->pass = 'f2lvmah9g0pga2d9';
+            $this->host = 'localhost';
+            ///$this->db = 'lgqwqt85l9jnps2m'; replace with your local db
+            $this->user = 'root';
+            $this->pass = '';
         }
+
+       print_r($_SERVER['REQUEST_URI']);
 
         $this->conn = $this->connect();
     }

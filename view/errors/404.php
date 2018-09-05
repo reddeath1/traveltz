@@ -1,3 +1,4 @@
+<?php include_once ('../head.php');?>
 <div class="banner">
 	<div class="container-fluid">
 		<div class="row">
