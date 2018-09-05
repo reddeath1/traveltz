@@ -6,8 +6,6 @@ class Main extends connection {
 
     public function __construct(){
         parent::__construct();
-
-        echo $this->Url();
     }
 
     public function getLocations($str = ''){
@@ -114,7 +112,7 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
         $name = $page_url.'://'.$_SERVER['SERVER_NAME'];
 
-        $name = (preg_match('/(localhost)/', $name)) ?  $name.'/traveltz' : (preg_match('/(herokuapp)/', $name)) ? $page_url.'://'.$_SERVER['SERVER_NAME'] : $name;
+        $name = (preg_match('/(localhost)/', $name)) ?  $name.'/traveltz' : $name;
 
         return $name;
     }
