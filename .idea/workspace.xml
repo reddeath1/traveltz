@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1782">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="n#__construct#0;n#Index#0;n#!!top" expanded="true" />
               </folding>
@@ -77,16 +77,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="116" column="162" selection-start-line="116" selection-start-column="162" selection-end-line="116" selection-end-column="162" />
+            <state relative-caret-position="189">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
+                <element signature="n#Url#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
                 <element signature="e#3857#4284#0#PHP" expanded="true" />
               </folding>
@@ -124,11 +124,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="272">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#a#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#a#1;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +181,6 @@
         <option value="$PROJECT_DIR$/../nevaa/inf.php" />
         <option value="$USER_HOME$/Downloads/users.sql" />
         <option value="$PROJECT_DIR$/controller/connection.php" />
-        <option value="$PROJECT_DIR$/view/home.php" />
         <option value="$PROJECT_DIR$/model/Locations.php" />
         <option value="$PROJECT_DIR$/view/filter.php" />
         <option value="$PROJECT_DIR$/header.php" />
@@ -185,10 +199,11 @@
         <option value="$PROJECT_DIR$/view/errors/404.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/model/connection.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/model/main.class.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/view/home.php" />
       </list>
     </option>
   </component>
@@ -485,7 +500,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="5021000" />
+      <workItem from="1536148103005" duration="5337000" />
     </task>
     <task id="LOCAL-00001" summary="added all thing">
       <created>1533572123047</created>
@@ -718,11 +733,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536188031090</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="[debugging]">
+      <created>1536188225536</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1536188225536</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[debugging]">
+      <created>1536188378919</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1536188378919</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87789000" />
+    <option name="totallyTimeSpent" value="88105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -1096,37 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-          <folding>
-            <element signature="n#__construct#0;n#Index#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <element signature="n#Requests#0;n#!!top" expanded="true" />
-            <element signature="n#__construct#0;n#Requests#0;n#!!top" expanded="true" />
-            <element signature="n#get_av_results#0;n#Requests#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1151,15 +1149,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="116" column="162" selection-start-line="116" selection-start-column="162" selection-end-line="116" selection-end-column="162" />
+        <state relative-caret-position="189">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#get_av_result#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
+            <element signature="n#Url#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
             <element signature="e#3857#4284#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <element signature="n#Requests#0;n#!!top" expanded="true" />
+            <element signature="n#__construct#0;n#Requests#0;n#!!top" expanded="true" />
+            <element signature="n#get_av_results#0;n#Requests#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="n#__construct#0;n#Index#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#a#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#a#1;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
