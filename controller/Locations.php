@@ -18,11 +18,14 @@ class Locations extends Main
     }
 
     public function getLocations($str = ''){
-        echo 'Locations ';
+
 
         $loc = parent::getLocations($str);
+        echo 'Locations 2';
 
         print_r($loc);
+
+        exit();
 
         // print_r(parent::getLocations($str))*/
 
