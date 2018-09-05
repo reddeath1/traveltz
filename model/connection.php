@@ -14,15 +14,16 @@ class connection{
         $this->db = 'lgqwqt85l9jnps2m';
 
         
-        if(preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
-        {
-            $this->host = 'localhost';
-            ///$this->db = 'traveltz'; replace with your local db
-            $this->user = 'root';
-            $this->pass = 'traveltz';
-        }
+//        if(!preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
+//        {
+//            $this->host = 'localhost';
+//            ///$this->db = 'traveltz'; replace with your local db
+//            $this->user = 'root';
+//            $this->pass = 'traveltz';
+//        }
 
         $this->conn = $this->connect();
+
     }
 
     private function connect(){
@@ -30,7 +31,7 @@ class connection{
 
         $sql = new mysqli($this->host,$this->user,$this->pass,$this->db);
 
-        ($sql->connect_errno) ? $sql = $sql->connect_error : $sql = $sql;
+        ($sql->connect_errno) ? $sql = $sql->connect_error : $sql;
 
 
         return $sql;
