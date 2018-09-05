@@ -20,16 +20,7 @@ class Locations extends Main
     public function getLocations($str = ''){
 
 
-        $loc = parent::getLocations($str);
-        echo 'Locations 2';
-
-        print_r($loc);
-
-        exit();
-
-        // print_r(parent::getLocations($str))*/
-
-
        return parent::getLocations($str);
+
     }
 }

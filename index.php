@@ -29,6 +29,9 @@ class Index {
      $locationss = $locations->getLocations();
      $location_names = '';
 
+
+
+
         foreach ($locationss as $location) {
             $lid = $location['id'];
             $lname = $location['name'];
@@ -50,6 +53,11 @@ class Index {
         
         $file = 'view/'.$action.'.php';
         
+
+
+         echo 'Loc';
+        print_r($locationss);
+
         if(!file_exists($file)){
             $file = 'view/home.php';
         }
