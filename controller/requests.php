@@ -156,7 +156,7 @@ class Requests extends Main
                $this->message = "No records found!";
             }
 
-            print_r((!empty($result) ? $this->encode(array('data'=>$result)) : ''));
+            print_r((!empty($result) ? $this->encode(array('data'=>$result,'count'=>count($data))) : ''));
        }else{
            $this->message = "All fields are required";
        }

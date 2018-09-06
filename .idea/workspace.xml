@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/requests.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
-              <caret line="69" selection-start-line="69" selection-end-line="77" />
+              <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="76" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requests.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="requests.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/requests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+            <state relative-caret-position="179">
+              <caret line="158" column="96" selection-start-line="158" selection-start-column="96" selection-end-line="158" selection-end-column="96" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
               </folding>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/view/result.php" />
         <option value="$PROJECT_DIR$/database/klmexpre_database.sql" />
         <option value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
-        <option value="$PROJECT_DIR$/controller/requests.php" />
         <option value="$PROJECT_DIR$/view/errors/404.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/footer.php" />
@@ -157,6 +156,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/model/main.class.php" />
+        <option value="$PROJECT_DIR$/controller/requests.php" />
       </list>
     </option>
   </component>
@@ -1112,20 +1112,6 @@
       <workItem from="1535905521218" duration="1591000" />
       <workItem from="1536148103005" duration="13608000" />
     </task>
-    <task id="LOCAL-00014" summary="added a slide show for banner">
-      <created>1535665683842</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1535665683843</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added search and filter prototype for front end view then shipped to the server [network] observation only at this point.">
-      <created>1535765621991</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1535765621991</updated>
-    </task>
     <task id="LOCAL-00016" summary="reshaped the files and added extra features to the controller">
       <created>1535815789123</created>
       <option name="number" value="00016" />
@@ -1455,11 +1441,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536220106666</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="[debugging]">
+      <created>1536220265021</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1536220265021</updated>
+    </task>
+    <task id="LOCAL-00064" summary="[debugging]">
+      <created>1536220361318</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1536220361318</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98318000" />
+    <option name="totallyTimeSpent" value="99284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1131" height="678" extended-state="0" />
@@ -1764,16 +1764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1856,7 +1846,17 @@
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="69" selection-start-line="69" selection-end-line="77" />
+          <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="158" column="96" selection-start-line="158" selection-start-column="96" selection-end-line="158" selection-end-column="96" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
