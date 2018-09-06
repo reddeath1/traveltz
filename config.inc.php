@@ -28,7 +28,7 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = $_ENV['b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com'];
+$cfg['Servers'][$i]['host'] = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
 $cfg['Servers'][$i]['user'] = 'c86qjllztzm11aex';
 $cfg['Servers'][$i]['pass'] = 'f2lvmah9g0pga2d9';
 $cfg['Servers'][$i]['compress'] = false;
