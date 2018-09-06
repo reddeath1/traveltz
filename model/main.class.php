@@ -52,7 +52,7 @@ class Main extends connection {
             $sort = '';
         }
 
-        $filter = (!empty($filter)) ? "AND b.features LIKE '%$filter%'" : '';
+        $filter = (!empty($filter)) ? "AND b.features LIKE '%$filter'" : '';
 
 
         $sql = $this->conn->query("SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b 

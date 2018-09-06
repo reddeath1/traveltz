@@ -26,8 +26,8 @@
       <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="298">
+              <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -1112,20 +1112,6 @@
       <workItem from="1535905521218" duration="1591000" />
       <workItem from="1536148103005" duration="13608000" />
     </task>
-    <task id="LOCAL-00010" summary="Added some restriction to the view and filtered data from the database">
-      <created>1535456620168</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1535456620168</updated>
-    </task>
-    <task id="LOCAL-00011" summary="added a slide show for banner">
-      <created>1535665020479</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1535665020479</updated>
-    </task>
     <task id="LOCAL-00012" summary="added a slide show for banner">
       <created>1535665232765</created>
       <option name="number" value="00012" />
@@ -1455,11 +1441,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536218997704</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="[debugging]">
+      <created>1536219650307</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1536219650307</updated>
+    </task>
+    <task id="LOCAL-00060" summary="[debugging]">
+      <created>1536219932515</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1536219932515</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97684000" />
+    <option name="totallyTimeSpent" value="98084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1131" height="678" extended-state="0" />
@@ -1475,10 +1475,10 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32743362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32743362" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15398389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15398389" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1542,11 +1542,11 @@
     <MESSAGE value="[finished] The check availability section" />
     <MESSAGE value="added swap mechanism" />
     <MESSAGE value="server reconfiguration" />
-    <MESSAGE value="[debugging]" />
     <MESSAGE value="added phpmyadmin" />
     <MESSAGE value="disabled phpmyadmin" />
     <MESSAGE value="deleted some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted some files" />
+    <MESSAGE value="[debugging]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[debugging]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1855,8 +1855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="298">
+          <caret line="66" column="43" lean-forward="true" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
         </state>
       </provider>
     </entry>
