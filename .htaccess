@@ -12,6 +12,8 @@ RewriteCond %{REQUEST_METHOD} POST
 ## if the request is not for a valid file
 RewriteCond %{REQUEST_FILENAME} !-f
 
+RewriteCond %{REQUEST_URI}!^/phpmyadmin
+
 RewriteRule ^ - [L]
 
 RewriteRule ^([a-zA-Z0-9_]+|)/([^/]+)?$ index.php?action=$1&q=$2 [L,QSA]
