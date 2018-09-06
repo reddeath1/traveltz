@@ -44,10 +44,6 @@ class Index {
         $default_date = '';
         $default_from = '';
         $default_to = '';
-        if(preg_match('/(phpmyadmin)/i',$_GET['action'])){
-            include ('phpmyadmin/config.inc.php');
-            die();
-        }
 
 
         include_once('header.php');
