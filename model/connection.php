@@ -33,6 +33,7 @@ class connection{
 
         ($sql->connect_errno) ? $sql = $sql->connect_error : $sql;
 
+        print_r($sql);
 
         return $sql;
     }

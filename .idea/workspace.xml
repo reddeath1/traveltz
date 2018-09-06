@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,17 +53,17 @@
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="432">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+              <caret line="41" column="60" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="60" />
               <folding>
                 <element signature="e#48#317#0#PHP" expanded="true" />
                 <element signature="e#319#437#0#PHP" expanded="true" />
@@ -75,13 +75,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="connection.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="405">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
               <folding>
-                <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
+                <element signature="n#__construct#0;n#connection#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +135,6 @@
         <option value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
         <option value="$PROJECT_DIR$/controller/requests.php" />
         <option value="$PROJECT_DIR$/view/errors/404.php" />
-        <option value="$PROJECT_DIR$/model/connection.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/view/home.php" />
@@ -145,8 +144,9 @@
         <option value="$PROJECT_DIR$/phpmyadmin/composer.lock" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/config.inc.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/model/connection.php" />
       </list>
     </option>
   </component>
@@ -412,21 +412,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="12906000" />
-    </task>
-    <task id="LOCAL-00003" summary="[Database] changed some field&#10;[controller] added location controller&#10;[model] added location model&#10;[main] added location display availability">
-      <created>1535417196941</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1535417196941</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[Debugging]">
-      <created>1535439880339</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1535439880339</updated>
+      <workItem from="1536148103005" duration="13330000" />
     </task>
     <task id="LOCAL-00005" summary="[Debugging]">
       <created>1535440343091</created>
@@ -757,11 +743,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536195008239</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added phpmyadmin">
+      <created>1536196267189</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1536196267189</updated>
+    </task>
+    <task id="LOCAL-00053" summary="disabled phpmyadmin">
+      <created>1536196504561</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1536196504561</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95674000" />
+    <option name="totallyTimeSpent" value="96098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -825,7 +825,8 @@
     <MESSAGE value="server reconfiguration" />
     <MESSAGE value="[debugging]" />
     <MESSAGE value="added phpmyadmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="added phpmyadmin" />
+    <MESSAGE value="disabled phpmyadmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="disabled phpmyadmin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1182,23 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="n#connect#0;n#connection#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error_log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1420" />
@@ -1207,13 +1191,30 @@
     <entry file="file://$PROJECT_DIR$/config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <caret line="41" column="60" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="60" />
           <folding>
             <element signature="e#48#317#0#PHP" expanded="true" />
             <element signature="e#319#437#0#PHP" expanded="true" />
             <element signature="e#547#579#0#PHP" expanded="true" />
             <element signature="e#2948#3133#0#PHP" expanded="true" />
             <element signature="e#4510#4641#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="n#__construct#0;n#connection#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
