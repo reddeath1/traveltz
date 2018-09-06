@@ -67,14 +67,14 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
         //WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
         //$sort
 //
-//        echo "SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b
-//LEFT JOIN company as co ON(b.co_id = co.id)
-//LEFT JOIN routes as r ON(r.bus_id = b.id)
-//LEFT JOIN location as r1 ON (r.r1 = r1.id)
-//LEFT JOIN location as r2 ON(r.r2 = r2.id)
-//LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
-//WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
-// GROUP BY bid";
+        echo "SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b
+LEFT JOIN company as co ON(b.co_id = co.id)
+LEFT JOIN routes as r ON(r.bus_id = b.id)
+LEFT JOIN location as r1 ON (r.r1 = r1.id)
+LEFT JOIN location as r2 ON(r.r2 = r2.id)
+LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
+WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
+ GROUP BY bid";
 
         if($sql->num_rows > 0){
             while($row = $sql->fetch_array(MYSQLI_ASSOC)){
