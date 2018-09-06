@@ -15,8 +15,6 @@ include_once (__DIR__ . '/controller/Locations.php');
 class Index {
     public function __construct(){
 
-        setcookie("TestCookie", "", time() - 3600);
-
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             include_once (__DIR__ . '/controller/requests.php');
             die();
