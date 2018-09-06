@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="119">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/main.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -140,7 +149,6 @@
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/view/home.php" />
         <option value="$PROJECT_DIR$/view/public/js/main.js" />
-        <option value="$PROJECT_DIR$/model/main.class.php" />
         <option value="$PROJECT_DIR$/phpmyadmin/config.inc.php" />
         <option value="$PROJECT_DIR$/phpmyadmin/composer.lock" />
         <option value="$PROJECT_DIR$/config.inc.php" />
@@ -148,6 +156,7 @@
         <option value="$PROJECT_DIR$/model/connection.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/model/main.class.php" />
       </list>
     </option>
   </component>
@@ -188,6 +197,11 @@
               <item name="TravelTZ" type="b2602c69:ProjectViewProjectNode" />
               <item name="TravelTZ" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TravelTZ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TravelTZ" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -201,7 +215,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -1098,20 +1112,6 @@
       <workItem from="1535905521218" duration="1591000" />
       <workItem from="1536148103005" duration="13608000" />
     </task>
-    <task id="LOCAL-00008" summary="[Debugging] live site">
-      <created>1535440953237</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1535440953237</updated>
-    </task>
-    <task id="LOCAL-00009" summary="[Debugging] live site">
-      <created>1535440966297</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1535440966297</updated>
-    </task>
     <task id="LOCAL-00010" summary="Added some restriction to the view and filtered data from the database">
       <created>1535456620168</created>
       <option name="number" value="00010" />
@@ -1441,11 +1441,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536218632207</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="deleted some files">
+      <created>1536218910201</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1536218910202</updated>
+    </task>
+    <task id="LOCAL-00058" summary="deleted some files">
+      <created>1536218997704</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1536218997704</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96961000" />
+    <option name="totallyTimeSpent" value="97684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1131" height="678" extended-state="0" />
@@ -1461,10 +1475,10 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32743362" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32743362" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15398389" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15398389" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1788,20 +1802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/main.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="76" column="15" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
-          <folding>
-            <element signature="n#__construct#0;n#Main#0;n#!!top" expanded="true" />
-            <element signature="n#get_av_seats#0;n#Main#0;n#!!top" expanded="true" />
-            <element signature="n#encode#0;n#Main#0;n#!!top" expanded="true" />
-            <element signature="n#Url#0;n#Main#0;n#!!top" expanded="true" />
-            <element signature="n#decode#0;n#Main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1848,8 +1848,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state relative-caret-position="119">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/main.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
