@@ -31,7 +31,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = $_ENV['b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com'];
 $cfg['Servers'][$i]['user'] = 'root';
 $cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
 
 /**
  * phpMyAdmin configuration storage settings.
