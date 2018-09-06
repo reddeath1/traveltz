@@ -12,7 +12,7 @@ RewriteCond %{REQUEST_METHOD} POST
 ## if the request is not for a valid file
 RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteCond %{REQUEST_URI}!^/phpmyadmin
+RewriteRule ^phpmyadmin/(.*)$ $1
 
 RewriteRule ^ - [L]
 
