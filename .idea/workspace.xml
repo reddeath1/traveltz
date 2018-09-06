@@ -62,8 +62,8 @@
       <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="34" column="45" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="351">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="e#48#317#0#PHP" expanded="true" />
                 <element signature="e#319#437#0#PHP" expanded="true" />
@@ -412,21 +412,7 @@
       <workItem from="1535752621616" duration="13610000" />
       <workItem from="1535801133655" duration="26631000" />
       <workItem from="1535905521218" duration="1591000" />
-      <workItem from="1536148103005" duration="11404000" />
-    </task>
-    <task id="LOCAL-00001" summary="added all thing">
-      <created>1533572123047</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1533572123047</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Restricted past dates with are not same to today date">
-      <created>1535187779233</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1535187779233</updated>
+      <workItem from="1536148103005" duration="12906000" />
     </task>
     <task id="LOCAL-00003" summary="[Database] changed some field&#10;[controller] added location controller&#10;[model] added location model&#10;[main] added location display availability">
       <created>1535417196941</created>
@@ -757,11 +743,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536194009104</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added phpmyadmin">
+      <created>1536194764726</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1536194764727</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added phpmyadmin">
+      <created>1536195008239</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1536195008239</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94172000" />
+    <option name="totallyTimeSpent" value="95674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1696" height="1016" extended-state="0" />
@@ -773,8 +773,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32801822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -833,13 +833,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/errors/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1206,10 +1199,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/error_log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1420" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="351">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
             <element signature="e#48#317#0#PHP" expanded="true" />
             <element signature="e#319#437#0#PHP" expanded="true" />

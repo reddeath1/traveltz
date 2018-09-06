@@ -27,10 +27,19 @@ $i = 0;
 $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
+
+$url = getenv('mysql://c86qjllztzm11aex:f2lvmah9g0pga2d9@b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/lgqwqt85l9jnps2m');
+$dbparts = parse_url($url);
+
+$hostname = $dbparts['host'];
+$username = $dbparts['user'];
+$password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
+
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-$cfg['Servers'][$i]['user'] = 'c86qjllztzm11aex';
-$cfg['Servers'][$i]['pass'] = 'f2lvmah9g0pga2d9';
+$cfg['Servers'][$i]['host'] = $hostname;
+$cfg['Servers'][$i]['user'] = $username;//'c86qjllztzm11aex';
+$cfg['Servers'][$i]['pass'] = $password; //'f2lvmah9g0pga2d9';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
 
