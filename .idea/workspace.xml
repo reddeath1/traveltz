@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+            <state relative-caret-position="153">
+              <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -1111,20 +1112,6 @@
       <workItem from="1535905521218" duration="1591000" />
       <workItem from="1536148103005" duration="13608000" />
     </task>
-    <task id="LOCAL-00018" summary="restored the missed part">
-      <created>1535919252401</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1535919252401</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added swap mechanism">
-      <created>1536074504386</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1536074504386</updated>
-    </task>
     <task id="LOCAL-00020" summary="server reconfiguration">
       <created>1536184811387</created>
       <option name="number" value="00020" />
@@ -1454,11 +1441,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536224835418</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="[debugging]">
+      <created>1536224925204</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1536224925204</updated>
+    </task>
+    <task id="LOCAL-00068" summary="[debugging]">
+      <created>1536224989398</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1536224989398</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99834000" />
+    <option name="totallyTimeSpent" value="100681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1131" height="678" extended-state="0" />
@@ -1854,8 +1855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+        <state relative-caret-position="153">
+          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
         </state>
       </provider>
     </entry>
