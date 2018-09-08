@@ -45,7 +45,7 @@ $seatNo = 0;
 
   for ($i = 0; $i <= $seatNo + 1; $i++){
 
-      $seat_count .="<div class=\"col-xs bus-seat\"><img src=\"$url/view/public/images/icons/seat-available.png\" id=\"seatImg\" onclick=\"changeImg()\"></div>";
+      $seat_count .="<div class=\"col-xs bus-seat\"><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
   }
 }
 ?>
@@ -101,16 +101,16 @@ $seatNo = 0;
 					<div class="container">
 						<div class="row">
 							<div class="col-md">
-								<img src="/view/public/images/icons/seat-booked.png"> Booked
+								<img src="<?php echo $url;?>/view/public/images/icons/seat-booked.png"> Booked
 							</div>
 							<div class="col-md">
-								<img src="/view/public/images/icons/seat-available.png"> Available
+								<img src="<?php echo $url;?>/view/public/images/icons/seat-available.png"> Available
 							</div>
 							<div class="col-md">
-								<img src="/view/public/images/icons/seat-unavailable.png"> Unavailable
+								<img src="<?php echo $url;?>/view/public/images/icons/seat-unavailable.png"> Unavailable
 							</div>
 							<div class="col-md">
-								<img src="/view/public/images/icons/seat-selected.png"> Selected
+								<img src="<?php echo $url;?>/view/public/images/icons/seat-selected.png"> Selected
 							</div>
 						</div>
 					</div>
