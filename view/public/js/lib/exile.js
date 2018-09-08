@@ -2839,6 +2839,16 @@ Exile = function (selector) {
         }
     };
 
+    ex.src = function(value){
+        console.log(this.attr('src'));
+        if(typeof value != 'undefined'
+            && value !== null){
+            return this.attr('src',value);
+        }else{
+            return this.attr('src');
+        }
+    }
+
     return ex;
 };
 

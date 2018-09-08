@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="[debugging]">
-      <change afterPath="$PROJECT_DIR$/controller/Bus.php" afterDir="false" />
+    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="Fetched bus info, added countDown method for real time datetime count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Locations.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Locations.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/public/js/lib/exile.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/lib/exile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/main.js" afterDir="false" />
@@ -51,16 +46,17 @@
       <file leaf-file-name="seater.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/seater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
+            <state relative-caret-position="498">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="28" />
               <folding>
                 <element signature="e#0#5#0#PHP" expanded="true" />
                 <element signature="e#179#210#0#PHP" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#1877#1882#0#PHP" expanded="true" />
                 <element signature="e#1949#1954#0#PHP" expanded="true" />
                 <element signature="e#2099#2104#0#PHP" expanded="true" />
+                <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1284#1543#0#HTML" expanded="true" />
                 <element signature="e#2413#2418#0#PHP" expanded="true" />
                 <element signature="e#2501#2506#0#PHP" expanded="true" />
                 <element signature="e#2602#2607#0#PHP" expanded="true" />
@@ -88,24 +84,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="755" column="13" selection-start-line="755" selection-start-column="13" selection-end-line="755" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="761" column="13" lean-forward="true" selection-start-line="761" selection-start-column="13" selection-end-line="761" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="288" column="34" selection-start-line="288" selection-start-column="34" selection-end-line="288" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="305" column="46" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
               <folding>
-                <element signature="e#1552#3766#0" />
+                <element signature="e#1383#3961#0" expanded="true" />
                 <element signature="e#3335#3752#0" expanded="true" />
                 <element signature="e#5291#5342#0" expanded="true" />
+                <element signature="e#7702#7863#0" expanded="true" />
+                <element signature="e#7773#7774#0" expanded="true" />
+                <element signature="e#7850#7851#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +113,11 @@
       <file leaf-file-name="exile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/public/js/lib/exile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="2766" column="41" selection-start-line="2766" selection-start-column="37" selection-end-line="2766" selection-end-column="41" />
+            <state relative-caret-position="268">
+              <caret line="2843" column="25" selection-start-line="2843" selection-start-column="25" selection-end-line="2843" selection-end-column="25" />
               <folding>
+                <element signature="e#3124#3297#0" expanded="true" />
+                <element signature="e#7606#8007#0" expanded="true" />
                 <element signature="e#26758#31654#0" expanded="true" />
                 <element signature="e#28868#30846#0" expanded="true" />
                 <element signature="e#31683#31780#0" expanded="true" />
@@ -171,6 +172,9 @@
       <find>pa</find>
       <find>con-&gt;</find>
       <find>isNull</find>
+      <find>src</find>
+      <find>attr</find>
+      <find>each</find>
     </findStrings>
     <replaceStrings>
       <replace>ex.http</replace>
@@ -214,9 +218,9 @@
         <option value="$PROJECT_DIR$/model/main.class.php" />
         <option value="$PROJECT_DIR$/controller/Bus.php" />
         <option value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
-        <option value="$PROJECT_DIR$/view/public/js/main.js" />
         <option value="$PROJECT_DIR$/view/seater.php" />
         <option value="$PROJECT_DIR$/view/public/css/style.css" />
+        <option value="$PROJECT_DIR$/view/public/js/main.js" />
       </list>
     </option>
   </component>
@@ -529,21 +533,7 @@
       <workItem from="1536148103005" duration="13608000" />
       <workItem from="1536317260615" duration="31000" />
       <workItem from="1536355533327" duration="5506000" />
-      <workItem from="1536416128535" duration="13628000" />
-    </task>
-    <task id="LOCAL-00022" summary="server reconfiguration">
-      <created>1536185926450</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1536185926450</updated>
-    </task>
-    <task id="LOCAL-00023" summary="server reconfiguration">
-      <created>1536186048790</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1536186048790</updated>
+      <workItem from="1536416128535" duration="16560000" />
     </task>
     <task id="LOCAL-00024" summary="[debugging]">
       <created>1536186197473</created>
@@ -874,11 +864,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536225842796</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Seats making">
+      <created>1536440918580</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1536440918581</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Fetched bus info, added countDown method for real time datetime count">
+      <created>1536441061968</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1536441061969</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120688000" />
+    <option name="totallyTimeSpent" value="123620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -890,8 +894,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3277027" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3243243" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3243243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -944,7 +948,9 @@
     <MESSAGE value="disabled phpmyadmin" />
     <MESSAGE value="deleted some files" />
     <MESSAGE value="[debugging]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[debugging]" />
+    <MESSAGE value="Seats making" />
+    <MESSAGE value="Fetched bus info, added countDown method for real time datetime count" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetched bus info, added countDown method for real time datetime count" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1258,9 +1264,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/public/js/lib/exile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="2766" column="41" selection-start-line="2766" selection-start-column="37" selection-end-line="2766" selection-end-column="41" />
+        <state relative-caret-position="268">
+          <caret line="2843" column="25" selection-start-line="2843" selection-start-column="25" selection-end-line="2843" selection-end-column="25" />
           <folding>
+            <element signature="e#3124#3297#0" expanded="true" />
+            <element signature="e#7606#8007#0" expanded="true" />
             <element signature="e#26758#31654#0" expanded="true" />
             <element signature="e#28868#30846#0" expanded="true" />
             <element signature="e#31683#31780#0" expanded="true" />
@@ -1271,30 +1279,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="288" column="34" selection-start-line="288" selection-start-column="34" selection-end-line="288" selection-end-column="34" />
-          <folding>
-            <element signature="e#1552#3766#0" />
-            <element signature="e#3335#3752#0" expanded="true" />
-            <element signature="e#5291#5342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/seater.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="79" column="63" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
+        <state relative-caret-position="498">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="28" />
           <folding>
             <element signature="e#0#5#0#PHP" expanded="true" />
             <element signature="e#179#210#0#PHP" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#1877#1882#0#PHP" expanded="true" />
             <element signature="e#1949#1954#0#PHP" expanded="true" />
             <element signature="e#2099#2104#0#PHP" expanded="true" />
+            <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1284#1543#0#HTML" expanded="true" />
             <element signature="e#2413#2418#0#PHP" expanded="true" />
             <element signature="e#2501#2506#0#PHP" expanded="true" />
             <element signature="e#2602#2607#0#PHP" expanded="true" />
@@ -1323,8 +1320,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="755" column="13" selection-start-line="755" selection-start-column="13" selection-end-line="755" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="761" column="13" lean-forward="true" selection-start-line="761" selection-start-column="13" selection-end-line="761" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="305" column="46" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
+          <folding>
+            <element signature="e#1383#3961#0" expanded="true" />
+            <element signature="e#3335#3752#0" expanded="true" />
+            <element signature="e#5291#5342#0" expanded="true" />
+            <element signature="e#7702#7863#0" expanded="true" />
+            <element signature="e#7773#7774#0" expanded="true" />
+            <element signature="e#7850#7851#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -45,7 +45,7 @@ $seatNo = 0;
 
   for ($i = 0; $i <= $seatNo + 1; $i++){
 
-      $seat_count .="<div class=\"col-xs\"><img src=\"$url/view/public/images/icons/seat-available.png\" id=\"seatImg\" onclick=\"changeImg()\"></div>";
+      $seat_count .="<div class=\"col-xs bus-seat\"><img src=\"$url/view/public/images/icons/seat-available.png\" id=\"seatImg\" onclick=\"changeImg()\"></div>";
   }
 }
 ?>

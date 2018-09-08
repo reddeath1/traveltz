@@ -291,6 +291,21 @@ Ttz.URi = function () {
 
 
     if(!$('.seats').isNull()){
+        var last;
 
+        $('.bus-seat').each('.bus-seat',function(item,index){
+
+            last = index;
+
+            $(item).on('click',function(){
+               alert('Not yet ! Diiiiiiiiiiiiiiiiiiiiiiiick');
+            });
+        });
+
+        var li = $(document.getElementsByClassName('bus-seat')[last].children[0]);
+        li.element.onClick = function(){ return false};
+        li.src(_T.URi()+'view/public/images/icons/seat-unavailable.png');
+        li.attr('title','Unavailable');
     }
+
 })($$,http,Ttz);

@@ -753,6 +753,12 @@ hr {
 	margin-top: 20px;
 }
 
+.seats{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+
 .seats > div{
 	float: left;
 }
