@@ -288,4 +288,9 @@ Ttz.URi = function () {
     if(!$('.collapse-btn').isNull()){
         $('.elapsed').countDown();
     }
+
+
+    if(!$('.seats').isNull()){
+
+    }
 })($$,http,Ttz);
