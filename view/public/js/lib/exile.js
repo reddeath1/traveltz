@@ -1163,6 +1163,13 @@ Exile = function (selector) {
         }
     };
 
+    ex.isNull = function(){
+      if(this.element === null)
+          return true;
+      else
+          return false;
+    };
+
     /**
      * @center center the view
      */
@@ -2749,6 +2756,60 @@ Exile = function (selector) {
         return (this.element.value.length > 0);
     };
 
+    ex.countDown = function(type){
+
+        var date = this.attr('time'),
+            holder = this,
+            type = (typeof type != 'undefined') ? type : '';
+
+        console.log(date);
+
+        var countDownDate = new Date(date).getTime();
+
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            var r = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if(type !== ''){
+                if(type === 'd'){
+                    r = days+'d ';
+                }
+
+                if(type === 'h'){
+                    r = hours+'h ';
+                }
+
+                if(type === 'm'){
+                    r = minutes+'m ';
+                }
+
+                if(type === 's'){
+                    r = seconds+'s ';
+                }
+            }
+
+            // Display the result in the element with id="demo"
+            holder.html(r);
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                holder.html("EXPIRED");
+            }
+        }, 1000);
+    };
 
     /**
      * Get Url parameters

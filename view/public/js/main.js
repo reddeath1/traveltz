@@ -28,12 +28,14 @@ Ttz.StrictDate = function (el) {
     
     date = year+'-'+month+'-'+today;
 
-    el.attr('min',date);
+    if(el.element !== null){
+        el.attr('min',date);
 
-    el.element.addEventListener('keyup',function () {
-         this.focus();
-        this.value = '';
-    });
+        el.element.addEventListener('keyup',function () {
+            this.focus();
+            this.value = '';
+        });
+    }
 };
 
 Ttz.CheckAvailability = function(el){
@@ -54,7 +56,7 @@ Ttz.CheckAvailability = function(el){
 
 Ttz.getAvailabilityResults = function(filter) {
 
-    if ($$('#date-picker').isNotEmpty() &&
+    if ((!$$('#date-picker').isNull()) && $$('#date-picker').isNotEmpty() &&
         $$('#from').isNotEmpty() &&
         $$('#to').isNotEmpty() &&
         ($$('#from').value() !== $$('#to').value())) {
@@ -124,7 +126,7 @@ Ttz.getAvailabilityResults = function(filter) {
     })
 
     }else if(
-        $$('#from').isNotEmpty()
+        (!$$('#date-picker').isNull()) && $$('#from').isNotEmpty()
         && $$('#to').isNotEmpty()
         && $$('#from').value() === $$('#to').value()){
         alert("Sorry there is no bus going that route");
@@ -133,15 +135,18 @@ Ttz.getAvailabilityResults = function(filter) {
 
 
 Ttz.swapVAlue = function(){
-  $$('.swap').on('click',function(){
-      var to = $$('#to').value(),
-          from = $$('#from').value();
 
-      $$('#from').value(to);
-      $$('#to').value(from);
+  if(!$$('.swap').isNull()){
+      $$('.swap').on('click',function(){
+          var to = $$('#to').value(),
+              from = $$('#from').value();
 
-      Ttz.getAvailabilityResults();
-  });
+          $$('#from').value(to);
+          $$('#to').value(from);
+
+          Ttz.getAvailabilityResults();
+      });
+  }
 };
 
 Ttz.URi = function () {
@@ -253,7 +258,7 @@ Ttz.URi = function () {
     /**
      * @search Listen for change state of the search vaule
      */
-    if(typeof $('#from').element !== null)
+    if($('#from').element !== null)
         $('#from').on('change',function () {
             if(this.value !== ''){
                 _T.getAvailabilityResults();
@@ -263,7 +268,7 @@ Ttz.URi = function () {
     /**
      * @search Listen for change state of the search vaule
      */
-    if(typeof $('#to').element !== null)
+    if($('#to').element !== null)
         $('#to').on('change',function () {
             if(this.value !== ''){
                 _T.getAvailabilityResults();
@@ -273,12 +278,14 @@ Ttz.URi = function () {
     /**
      * @search Listen for change state of the search vaule
      */
-    if(typeof $('#date-picker').element !== null)
+    if($('#date-picker').element !== null)
         $('#date-picker').on('change',function () {
             if(this.value !== ''){
                 _T.getAvailabilityResults();
             }
         });
 
-
+    if(!$('.collapse-btn').isNull()){
+        $('.elapsed').countDown();
+    }
 })($$,http,Ttz);

@@ -15,6 +15,7 @@ include_once (__DIR__ . '/controller/Locations.php');
 class Index {
     public function __construct(){
 
+
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             include_once (__DIR__ . '/controller/requests.php');
             die();

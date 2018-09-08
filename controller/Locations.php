@@ -9,6 +9,8 @@
 $dir = str_replace('controller','',__DIR__);
 
 include_once ($dir.'model/main.class.php');
+
+
 class Locations extends Main
 {
 

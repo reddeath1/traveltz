@@ -1,64 +1,83 @@
+<?php
+
+if(!empty($q)){
+    $dir = str_replace('view','controller/Bus.php',__DIR__);
+
+    include_once ($dir);
+
+$buss = new Bus();
+  $bus = $buss->getBuses($q);
+
+$b_summary = "";
+$seat_count = '';
+$seatNo = 0;
+  if(count($bus) > 0){
+      foreach ($bus as $item){
+          $seatNo = $item['seats_count'];
+          $sid = $item['id'];
+          $time = $item['d_time'];
+          $dates = $item['dep_date'];
+          $route = $item['route'];
+          $bno = $item['bus_no'];
+          $logo = $item['logo'];
+          $date = date("m D Y",strtotime($dates));
+          $e_time = date("M d, Y H:i:s",strtotime($dates));
+          $time = date('H:i',strtotime($time));
+
+          $elapse = $buss->Elapsed($dates);
+
+          $b_summary = "<div class=\"card-header\">
+						summary
+						<span class=\"float-right collapse-btn\" data-toggle=\"collapse\" data-target=\"#collapsible-summary\">
+							<ion-icon name=\"menu\"></ion-icon>
+						</span>
+					</div>
+					<div class=\"card-body collapse\" id=\"collapsible-summary\">
+						<img src=\"$url/view/public/images/busLogo/$logo\" class=\"rounded img-fluid\" alt=\"...\"> DAR - ARS
+
+						<p><strong>Date: </strong>$date</p>
+						<p><strong>Time of Departure: </strong>$time Hrs</p>
+						<p><strong>ETA: </strong><i class='elapsed' time='$e_time'>$elapse</i></p>
+						<p><strong>Bus No.: </strong>$bno</p>
+					</div>";
+      }
+  }
+
+  for ($i = 0; $i <= $seatNo + 1; $i++){
+
+      $seat_count .="<div class=\"col-xs\"><img src=\"$url/view/public/images/icons/seat-available.png\" id=\"seatImg\" onclick=\"changeImg()\"></div>";
+  }
+}
+?>
+
+
 <div class="container-fluid seater">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
 				<div class="seat-layout-bg">
 					<div class="seat-layout">
-						<?php
-					$seat = '<div class="col-xs"><img src="/view/public/images/icons/seat-available.png" id="seatImg" onclick="changeImg()"></div>';
-					$seatNo = 13;
-					$x = 1;
-					?>
-						<div class="row mb-2">
+						<div class="row mb-2 seats">
 
-							<?php
-
-						for($x=0; $x<$seatNo;$x++) {
-							echo $seat;
-						}
-
-						?>
+							<?php echo $seat_count; ?>
 						</div>
-						<div class="row mb-2">
-							<?php
-						$x = 1;
-						for($x=0; $x<$seatNo;$x++) {
-							echo $seat;
-						}
 
-						?>
-						</div>
-						<div class="row mb-2 mt-2 mid-seat">
-							<div class="col-xs"><img src="/view/public/images/icons/seat-available.png"></div>
-						</div>
-						<div class="row mb-2">
-							<?php
-						$x = 1;
-						for($x=0; $x<$seatNo;$x++) {
-							echo $seat;
-						}
-
-						?>
-						</div>
-						<div class="row mb-2">
-							<?php
-						$x = 1;
-						for($x=0; $x<$seatNo;$x++) {
-							echo $seat;
-						}
-
-						?>
-							<div class="col-xs"><img src="/view/public/images/icons/seat-unavailable.png" id="" onclick="changeImg()"></div>
-						</div>
+<!--						<div class="row mb-2 mt-2 mid-seat">-->
+<!--							<div class="col-xs"><img src="--><?php //echo $url;?><!--/view/public/images/icons/seat-available.png"></div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="row mb-2">-->
+<!--						<div class="col-xs"><img src="--><?php //echo $url;?><!--/view/public/images/icons/seat-unavailable.png" id="" onclick="changeImg()"></div>-->
+<!--						</div>-->
 					</div>
 					<script>
 						var image = document.getElementById("seatImg");
 
 						function changeImg() {
-							if (image.getAttribute('src') == "/view/public/images/icons/seat-available.png") {
-								image.src = "/view/public/images/icons/seat-selected.png";
+							if (image.getAttribute('src') == "<?php echo $url;?>/view/public/images/icons/seat-available.png") {
+								image.src = "<?php echo $url;?>/view/public/images/icons/seat-selected.png";
 							} else {
-								image.src = "/view/public/images/icons/seat-available.png";
+								image.src = "<?php echo $url;?>/view/public/images/icons/seat-available.png";
 							}
 						}
 
@@ -99,20 +118,7 @@
 			</div>
 			<div class="col-lg-4 offset-lg-1 summary">
 				<div class="card">
-					<div class="card-header">
-						summary
-						<span class="float-right" data-toggle="collapse" data-target="#collapsible-summary">
-							<ion-icon name="menu"></ion-icon>
-						</span>
-					</div>
-					<div class="card-body collapse" id="collapsible-summary">
-						<img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16558674435%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16558674435%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2274.421875%22%20y%3D%22104.396875%22%3E200x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" class="rounded img-fluid" alt="..."> DAR - ARS
-
-						<p><strong>Date: </strong>2 August 2018</p>
-						<p><strong>Time of Departure: </strong>15:40Hrs</p>
-						<p><strong>ETA: </strong>5Hrs</p>
-						<p><strong>Bus No.: </strong>T546 HJJ</p>
-					</div>
+					<?php echo  $b_summary;?>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item"><strong>SUMMARY:</strong>
 							<ul class="subtotal-0">

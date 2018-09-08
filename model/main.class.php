@@ -64,27 +64,12 @@ LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
 WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
  GROUP BY bid");
 
-        //WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
-        //$sort
-//
-//        echo "SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b
-//LEFT JOIN company as co ON(b.co_id = co.id)
-//LEFT JOIN routes as r ON(r.bus_id = b.id)
-//LEFT JOIN location as r1 ON (r.r1 = r1.id)
-//LEFT JOIN location as r2 ON(r.r2 = r2.id)
-//LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
-//WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
-// GROUP BY bid";
-
         if($sql->num_rows > 0){
             while($row = $sql->fetch_array(MYSQLI_ASSOC)){
                 $data[] = $row;
 
             }
         }
-
-
-
 
 
         return $data;
@@ -108,6 +93,31 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
     public function encode($data){
         return json_encode($data);
+    }
+
+    public function bus($id = false){
+        $data = array();
+
+        if($id){
+
+            $sql = $this->conn->query("SELECT b.*,b.id as bid,
+CONCAT(r1.name,'-',r2.name) as route,
+r.dep_date,co.name as company,co.logo,TIME(r.dep_date) as d_time FROM bus as b
+            LEFT JOIN company as co ON(b.co_id = co.id)
+            LEFT JOIN routes as r ON(r.bus_id = b.id) 
+            LEFT JOIN location as r1 ON (r.r1 = r1.id)
+            LEFT JOIN location as r2 ON(r.r2 = r2.id)
+            WHERE  b.id = '$id'");
+
+
+            if($sql->num_rows > 0){
+                while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                    $data[] = $row;
+                }
+            }
+        }
+
+        return $data;
     }
 
     /**
@@ -165,7 +175,6 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
             return $data = trim($data);
         }
     }
-
 
     /**
      * @e.g $data = array('table'=>'table_name','table1'=>'table_name','table2'=>'table_name','alias'=>'r','alias1'=>'t',
@@ -286,8 +295,8 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
         }
 
 
-        $sql = $this->con->query("SELECT $av FROM $av1 $av2  $av3 $like $align $limit");
 
+        $sql = $this->conn->query("SELECT $av FROM $av1 $av2  $av3 $like $align $limit");
 
         if(@$sql->num_rows > 0) {
             if(!empty($state)) {
@@ -300,7 +309,6 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
         }else {
             $status = false;
         }
-
 
 
         return $status;
@@ -322,7 +330,7 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
         if(!empty($rows) && count($rows)) {
             foreach($rows as $key => $value){
-                $values .= $key." = '".$this->con->real_escape_string($value)."', ";
+                $values .= $key." = '".$this->conn->real_escape_string($value)."', ";
             }
 
             $values = chop($values,', ');
@@ -330,13 +338,13 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
         if(!empty($arg) && count($arg)) {
             foreach($arg as $key => $value){
-                $value1 .= $key." = '".$this->con->real_escape_string($value)."' AND ";
+                $value1 .= $key." = '".$this->conn->real_escape_string($value)."' AND ";
             }
 
             $where = ' WHERE ' .chop($value1,' AND ');
         }
 
-        $sql = $this->con->query("INSERT INTO $tb SET $values $where");
+        $sql = $this->conn->query("INSERT INTO $tb SET $values $where");
         if($sql){
             $state = true;
             $sql->close();
@@ -362,7 +370,7 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
         if(count($rows) > 0) {
 
             foreach($rows as $key => $value){
-                $upsts .= "$key = '".$this->con->real_escape_string($value)."' AND ";
+                $upsts .= "$key = '".$this->conn->real_escape_string($value)."' AND ";
             }
 
             $infos = chop($upsts," AND ");
@@ -371,13 +379,45 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
 
         if(count($arg) > 0) {
             foreach($arg as $key => $value){
-                $upst .= "$key = '".$this->con->real_escape_string($value)."' , ";
+                $upst .= "$key = '".$this->conn->real_escape_string($value)."' , ";
             }
 
             $extr = chop($upst, ' , ');
         }
 
-        return $this->con->query("UPDATE $tb SET $extr WHERE $infos LIMIT 1");
+        return $this->conn->query("UPDATE $tb SET $extr WHERE $infos LIMIT 1");
+    }
+
+
+    public function Elapsed($datetime, $full = false){
+        $now = new DateTime;
+        $ago = new DateTime($datetime);
+        $diff = $now->diff($ago);
+        $diff->w = floor($diff->d / 7);
+        $diff->d -= $diff->w * 7;
+        $string = array(
+            'y' => 'year',
+            'm' => 'month',
+            'w' => 'week',
+            'd' => 'day',
+            'h' => 'hour',
+            'i' => 'minute',
+            's' => 'second',
+        );
+        foreach ($string as $k => &$v)
+        {
+            if ($diff->$k)
+            {
+                $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+            }
+            else
+            {
+                unset($string[$k]);
+            }
+        }
+        if (!$full) $string = array_slice($string, 0, 1);
+        return $string ? implode(', ', $string) . ' ago' : 'just now';
+
     }
 
 }
