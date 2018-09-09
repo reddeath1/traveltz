@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="Added summary prototype">
+    <list default="true" id="ec18a4d3-a320-4001-84d7-d15be3759144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/main.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/main.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/public/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/main.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
+            <state relative-caret-position="-83">
               <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
             </state>
           </provider>
@@ -100,12 +98,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+            <state relative-caret-position="377">
+              <caret line="224" column="5" selection-start-line="224" selection-start-column="5" selection-end-line="224" selection-end-column="5" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#5340#5869#0" expanded="true" />
+                <element signature="e#5502#5782#0" expanded="true" />
+                <element signature="e#5623#5928#0" expanded="true" />
                 <element signature="e#5977#6710#0" />
                 <element signature="e#6095#6702#0" expanded="true" />
                 <element signature="e#6247#6399#0" expanded="true" />
@@ -217,9 +219,9 @@
         <option value="$PROJECT_DIR$/controller/Bus.php" />
         <option value="$PROJECT_DIR$/view/public/js/lib/exile.js" />
         <option value="$PROJECT_DIR$/view/seater.php" />
-        <option value="$PROJECT_DIR$/view/public/js/main.js" />
         <option value="$PROJECT_DIR$/model/connection.php" />
         <option value="$PROJECT_DIR$/model/main.class.php" />
+        <option value="$PROJECT_DIR$/view/public/js/main.js" />
       </list>
     </option>
   </component>
@@ -429,14 +431,7 @@
       <workItem from="1536355533327" duration="5506000" />
       <workItem from="1536416128535" duration="29559000" />
       <workItem from="1536489085556" duration="1501000" />
-      <workItem from="1536509168790" duration="7012000" />
-    </task>
-    <task id="LOCAL-00030" summary="[debugging]">
-      <created>1536187466573</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1536187466573</updated>
+      <workItem from="1536509168790" duration="7392000" />
     </task>
     <task id="LOCAL-00031" summary="[debugging]">
       <created>1536187546120</created>
@@ -774,11 +769,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536490307944</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="[DEBUGGING] filter">
+      <created>1536518043939</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1536518043940</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145132000" />
+    <option name="totallyTimeSpent" value="145512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -847,7 +849,8 @@
     <MESSAGE value="Seats making" />
     <MESSAGE value="Fetched bus info, added countDown method for real time datetime count" />
     <MESSAGE value="Added summary prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added summary prototype" />
+    <MESSAGE value="[DEBUGGING] filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="[DEBUGGING] filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1120,23 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
-          <folding>
-            <element signature="e#5977#6710#0" />
-            <element signature="e#6095#6702#0" expanded="true" />
-            <element signature="e#6247#6399#0" expanded="true" />
-            <element signature="e#6583#6676#0" expanded="true" />
-            <element signature="e#7843#7844#0" expanded="true" />
-            <element signature="e#7888#7889#0" expanded="true" />
-            <element signature="e#8266#10224#0" expanded="true" />
-            <element signature="e#10089#10271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1192,8 +1178,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/main.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
+        <state relative-caret-position="-83">
           <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="224" column="5" selection-start-line="224" selection-start-column="5" selection-end-line="224" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#5340#5869#0" expanded="true" />
+            <element signature="e#5502#5782#0" expanded="true" />
+            <element signature="e#5623#5928#0" expanded="true" />
+            <element signature="e#5977#6710#0" />
+            <element signature="e#6095#6702#0" expanded="true" />
+            <element signature="e#6247#6399#0" expanded="true" />
+            <element signature="e#6583#6676#0" expanded="true" />
+            <element signature="e#7843#7844#0" expanded="true" />
+            <element signature="e#7888#7889#0" expanded="true" />
+            <element signature="e#8266#10224#0" expanded="true" />
+            <element signature="e#10089#10271#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

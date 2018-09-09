@@ -203,6 +203,22 @@ Ttz.URi = function () {
         $('.sorts').on('change',function(){
             var  v = this.value.toLowerCase();
 
+            $().each('.checks',function(item,index) {
+
+
+                item.addEventListener('change', function () {
+
+                    var v = item.value.toUpperCase();
+                    if (item.type == 'checkbox' && item.checked == true)
+
+                        filt += v + ',';
+
+                    else
+                        filt = filt.replace(',' + v, '');
+                });
+
+            });
+
 
             _T.getAvailabilityResults({sort:v,filter:filt});
         });
