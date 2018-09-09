@@ -300,11 +300,67 @@ Ttz.URi = function () {
         li.src(_T.URi()+'view/public/images/icons/seat-unavailable.png');
         li.attr('title','Unavailable');
 
-
         $('.bus-seat').each('.bus-seat',function(item,index){
             if(last !== index){
+                var scount = 0;
+                var c = document.getElementsByClassName('bus-seat')[index].children[0];
                 $(item).on('click',function(){
-                    alert('Not yet ! Diiiiiiiiiiiiiiiiiiiiiiiick');
+
+                    var data = $(this).attr('seat-data'),
+                    d = $().toArray(data,','),
+                    price = d[0],
+                    sno = d[1],
+                    sid = d[2],
+                        seat=  $('.seat-no').text(),
+                    pr = $('.price').text();
+
+                    if($(c).src() !== _T.URi()+'view/public/images/icons/seat-selected.png'){
+                        $(c).src(_T.URi()+'view/public/images/icons/seat-selected.png');
+                        $(this).addClass('selected');
+                        if(seat !== ''){
+                            seat += ','+sno;
+                            price = pr+' + '+price;
+
+                        }else{
+                            seat = sno;
+                            price =  price;
+
+                        }
+
+                    }else{
+                        $(this).removeClass('selected');
+                        $(c).src(_T.URi()+'view/public/images/icons/seat-available.png');
+
+                        if(seat !== ''){
+                            seat = seat.replace(','+sno,'');
+                            price = price.replace('+'+price,'');
+
+                        }
+
+                    }
+
+                    var l = $().length('.selected');
+
+                    $('.selected-seat').html("("+l+")");
+                    $('.seat-no').text(seat);
+                    $('.price').text(price);
+
+                    var pc = $().toArray($('.price').text(),' + '),prr = 0;
+
+                    for (var i =0; i <= pc.length;i++){
+                       if(typeof pc[i] !== 'undefined'){
+                           prr += parseInt(pc[i]);
+                       }
+                    }
+
+                    if($(c).src() !== _T.URi()+'view/public/images/icons/seat-selected.png'){
+                        prr = parseInt(prr) - parseInt(price);
+                    }
+
+
+                    $('.total-price').text(prr);
+
+
                 });
             }
         });

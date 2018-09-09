@@ -651,6 +651,10 @@ Exile = function (selector) {
         }
     };
 
+    ex.length = function(va){
+        return document.querySelectorAll(va).length;
+    }
+
     /**
      * @returns {*}
      */
@@ -2840,13 +2844,16 @@ Exile = function (selector) {
     };
 
     ex.src = function(value){
-        console.log(this.attr('src'));
         if(typeof value != 'undefined'
             && value !== null){
             return this.attr('src',value);
         }else{
             return this.attr('src');
         }
+    };
+
+    ex.toArray = function(str,delimiter){
+        return str.split(delimiter);
     }
 
     return ex;

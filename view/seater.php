@@ -20,6 +20,7 @@ $seatNo = 0;
           $route = $item['route'];
           $bno = $item['bus_no'];
           $logo = $item['logo'];
+
           $date = date("m D Y",strtotime($dates));
           $e_time = date("M d, Y H:i:s",strtotime($dates));
           $time = date('H:i',strtotime($time));
@@ -43,8 +44,15 @@ $seatNo = 0;
       }
   }
 
-  for ($i = 0; $i <= $seatNo + 1; $i++){
+  $seats = $buss->getSeats($q,$seatNo);
 
+  if(count($seats) > 0){
+      foreach ($seats as $seat) {
+          $sid = $seat['seat_id'];
+          $sno = $seat['sno'];
+          $cost = $seat['cost'];
+          $seat_count .="<div class=\"col-xs bus-seat\" seat-data='$cost,$sno,$sid'><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
+      }
       $seat_count .="<div class=\"col-xs bus-seat\"><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
   }
 }
@@ -122,11 +130,11 @@ $seatNo = 0;
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item"><strong>SUMMARY:</strong>
 							<ul class="subtotal-0">
-								<p><strong>Seat(s) selected (2): </strong>A1, A2</p>
-								<p><strong>Price Each:</strong> 35000Tzs</p>
+                                <p><strong>Seat(s) selected <b class="selected-seat" style="font-weight: normal;"></b>: </strong><b style="font-weight: normal;" class="seat-no"></b></p>
+                                <p><strong>Price Each:</strong> <b style="font-weight: normal;" class="price"></b></p>
 							</ul>
 						</li>
-						<li class="list-group-item"><strong>TOTAL</strong>: <span class="float-right"><strong>70000Tzs</strong></span></li>
+						<li class="list-group-item"><strong>TOTAL</strong>: <span class="float-right"><strong class="total-price"></strong></span></li>
 					</ul>
 				</div>
 				<a href="<?php echo $url;?>/personaldetails/" class="btn btn-banner btn-block mt-2">NEXT</a>

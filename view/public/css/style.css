@@ -559,6 +559,8 @@ hr {
 .seat-layout-bg {
 	background-color: #ffffff;
 	height: auto;
+	width: 94%;
+	float: left;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	padding: 30px 10px 0px 30px;
@@ -640,6 +642,8 @@ hr {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	padding: 10px;
+	width: 100%;
+	float: left;
 }
 
 .btn-key-booked {
@@ -753,14 +757,13 @@ hr {
 	margin-top: 20px;
 }
 
-.seats{
-	display: grid;
-	grid-template-columns: auto auto auto auto auto;
-}
-
-
 .seats > div{
 	float: left;
+}
+
+.seats > div:nth-child(33){
+	display: block;
+	width: 100%;
 }
 
 

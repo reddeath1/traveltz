@@ -120,6 +120,26 @@ r.dep_date,co.name as company,co.logo,TIME(r.dep_date) as d_time FROM bus as b
         return $data;
     }
 
+    public function getSeats($bus_id,$limit){
+        $data = array();
+
+        if($bus_id){
+
+            $sql = $this->conn->query("SELECT sc.*,s.* FROM seat_costs as sc 
+                                        LEFT JOIN seats as s ON(sc.seat_id = s.id)
+                                        WHERE sc.bus_id = '$bus_id' LIMIT 0,$limit");
+
+
+            if($sql->num_rows > 0){
+                while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                    $data[] = $row;
+                }
+            }
+        }
+
+        return $data;
+    }
+
     /**
      * Get url
      */
@@ -389,7 +409,8 @@ r.dep_date,co.name as company,co.logo,TIME(r.dep_date) as d_time FROM bus as b
     }
 
 
-    public function Elapsed($datetime, $full = false){
+    public function Elapsed($datetime,$full = false){
+
         $now = new DateTime;
         $ago = new DateTime($datetime);
         $diff = $now->diff($ago);
