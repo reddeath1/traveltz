@@ -287,6 +287,9 @@ Ttz.URi = function () {
 
     if(!$('.collapse-btn').isNull()){
         $('.elapsed').countDown();
+        if($('.elapsed').text() === "EXPIRED"){
+            $('.elapsed').text('LEFT');
+        }
     }
 
 
