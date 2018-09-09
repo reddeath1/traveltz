@@ -23,7 +23,7 @@ $seatNo = 0;
 
           $date = date("m D Y",strtotime($dates));
           $e_time = date("M d, Y H:i:s",strtotime($dates));
-          $time = date('H:i',strtotime($time));
+          $time = date('H:i A',strtotime($time));
 
           $elapse = $buss->Elapsed($dates);
 
@@ -37,7 +37,7 @@ $seatNo = 0;
 						<img src=\"$url/view/public/images/busLogo/$logo\" class=\"rounded img-fluid\" alt=\"...\"> DAR - ARS
 
 						<p><strong>Date: </strong>$date</p>
-						<p><strong>Time of Departure: </strong>$time Hrs</p>
+						<p><strong>Time of Departure: </strong>$time</p>
 						<p><strong>ETA: </strong><i class='elapsed' time='$e_time'>$elapse</i></p>
 						<p><strong>Bus No.: </strong>$bno</p>
 					</div>";
