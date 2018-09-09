@@ -52,7 +52,24 @@ class Main extends connection {
             $sort = '';
         }
 
-        $filter = (!empty($filter)) ? "AND b.features LIKE '%$filter%'" : '';
+
+
+        $filters = '';
+
+        if(!empty($filter) && count(explode(',',$filter)) > 0){
+            $filters = 'AND (';
+            $filter = explode(',',$filter);
+
+            foreach ($filter as $value){
+                $filters .= "b.features LIKE '%$value%' OR ";
+            }
+
+            $filters = chop($filters,' OR ').")";
+        }else{
+            if(!empty($filter)){
+                $filters = " AND b.features LIKE '%$filter%'";
+            }
+        }
 
 
         $sql = $this->conn->query("SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b 
@@ -61,7 +78,7 @@ LEFT JOIN routes as r ON(r.bus_id = b.id)
 LEFT JOIN location as r1 ON (r.r1 = r1.id)
 LEFT JOIN location as r2 ON(r.r2 = r2.id)
 LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
-WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filter
+WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filters
  GROUP BY bid");
 
         if($sql->num_rows > 0){

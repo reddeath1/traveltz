@@ -222,7 +222,7 @@ Ttz.URi = function () {
                 filt += v+',';
 
             else
-                filt = filt.replace(v,'');
+                filt = filt.replace(','+v,'');
 
             _T.getAvailabilityResults({filter:filt,sort:$('.sorts').value().toLowerCase()});
         });
@@ -249,7 +249,7 @@ Ttz.URi = function () {
             }else {
                 $().each('.checks', function (item, index) {
                     item.checked = false;
-                    filt = ',';
+                    filt = '';
                 });
             }
         });
@@ -353,12 +353,13 @@ Ttz.URi = function () {
                        }
                     }
 
-                    if($(c).src() !== _T.URi()+'view/public/images/icons/seat-selected.png'){
-                        prr = parseInt(prr) - parseInt(price);
-                    }
-
-
                     $('.total-price').text(prr);
+
+                    setTimeout(function(){
+                        if($('.seat-no').text() === '(0)'){
+                            $('.total-price').text(' ');
+                        }
+                    },100);
 
 
                 });

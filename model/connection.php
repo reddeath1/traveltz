@@ -14,13 +14,13 @@ class connection{
         $this->db = 'lgqwqt85l9jnps2m';
 
         
-        if(preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
-        {
-            $this->host = 'localhost';
-            $this->db = 'traveltz';
-            $this->user = 'root';
-            $this->pass = '';
-        }
+//        if(preg_match('/(localhost)/i',$_SERVER['HTTP_HOST']))
+//        {
+//            $this->host = 'localhost';
+//            $this->db = 'traveltz';
+//            $this->user = 'root';
+//            $this->pass = '';
+//        }
 
         $this->conn = $this->connect();
 
