@@ -69,13 +69,15 @@ class Requests extends Main
 
             $feature = '';
 
+            $results = array();
+
             if(count($data) > 0){
 
                 foreach ($data as $item) {
                     $bid = strtoupper($item['id']);
                     $company = strtoupper($item['company']);
                     $features = $item['features'];
-                    $seats = (int) $item['seats_count'] -1 ;
+                    $seats = (int) $item['seats_count'];
                     $route = $item['route'];
                     $depature = $item['dep_date'];
                     $price = $item['price'].'Tzs';
@@ -91,23 +93,85 @@ class Requests extends Main
 
                     if(preg_match("/tv/i", $features))
                     {
-                        $feature .= '<ion-icon name="tv"></ion-icon>';
-                    }
+                        if(preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  && preg_match("/ac/i", $features) && preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon name=\"podium\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(!preg_match("/tv/i", $features) && preg_match("/charge/i", $features)  && preg_match("/ac/i", $features)&& preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && !preg_match("/ac/i", $features) && preg_match("/wifi/i", $features) && preg_match("/charge/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/ac/i", $features) && !preg_match("/wifi/i", $features) && preg_match("/charge/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon name=\"battery-charging\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/ac/i", $features) && !preg_match("/wifi/i", $features) && !preg_match("/charge/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else{
+                            $feature ='<ion-icon name="cafe"></ion-icon>';
+                        }
+                    }else if(preg_match("/ac/i", $features)){
 
-                    if(preg_match("/ac/i", $features)){
+                        if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features) && preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(!preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && !preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && !preg_match("/charge/i", $features)  &&  preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  && !preg_match("/wifi/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon><ion-icon name=\"battery-charging\"></ion-icon> ";
+                        }else{
+                            $feature ='<ion-icon name="podium"></ion-icon>';
+                        }
 
-                    }
+                    }else if(preg_match("/wifi/i", $features)){
 
-                    if(preg_match("/wifi/i", $features)){
-                            $feature .= '<ion-icon ios="ios-wifi" md="md-wifi"></ion-icon>';
-                    }
+                        if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features) && preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(!preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && !preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && !preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/drinks/i", $features) && preg_match("/charge/i", $features)  && !preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else{
+                            $feature ='<ion-icon ios="ios-wifi" md="md-wifi"></ion-icon>';
+                        }
 
-                    if(preg_match("/drinks/i", $features)){
-                        $feature .= '<ion-icon name="cafe"></ion-icon>';
-                    }
+                    }else if(preg_match("/drinks/i", $features)){
 
-                    if(preg_match("/charge/i", $features)){
-                        $feature .= '<ion-icon name="battery-charging"></ion-icon>';
+                        if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/charge/i", $features) && preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(!preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && !preg_match("/wifi/i", $features) && preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && !preg_match("/charge/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/charge/i", $features)  && !preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else{
+                            $feature ='<ion-icon name="cafe"></ion-icon>';
+                        }
+
+                    }else if(preg_match("/charge/i", $features)){
+
+                        if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/cafe/i", $features) && preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(!preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/cafe/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && !preg_match("/wifi/i", $features) && preg_match("/cafe/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"podium\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && !preg_match("/cafe/i", $features)  &&  preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon name=\"podium\"></ion-icon>  <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else if(preg_match("/tv/i", $features) && preg_match("/wifi/i", $features) && preg_match("/cafe/i", $features)  && !preg_match("/ac/i", $features)){
+                            $feature = "<ion-icon name=\"tv\"></ion-icon> <ion-icon name=\"cafe\"></ion-icon> <ion-icon name=\"battery-charging\"></ion-icon> <ion-icon ios=\"ios-wifi\" md=\"md-wifi\"></ion-icon>";
+                        }else{
+                            $feature ='<ion-icon name="battery-charging"></ion-icon>';
+                        }
+
+                    }else{
+                        $feature = '';
                     }
 
                     $logo = $this->url."/view/public/images/busLogo/$logo";
@@ -141,12 +205,16 @@ class Requests extends Main
 						</div>
 					</div>
 				</div>" : $this->message = 'No records found';
+
+                    array_push($results,$feature);
                }
             }else{
                $this->message = "No records found!";
             }
 
-            print_r((!empty($result) ? $this->encode(array('data'=>$result,'count'=>count($data))) : ''));
+
+
+            print_r((!empty($result) ? $this->encode(array('data'=>$result,'count'=>count($data),'results'=>$results)) : ''));
        }else{
            $this->message = "All fields are required";
        }

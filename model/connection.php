@@ -18,8 +18,8 @@ class connection{
 //        {
 //            $this->host = 'localhost';
 //            $this->db = 'traveltz';
-//            $this->user = 'root';
-//            $this->pass = '';
+//            $this->user = 'reddeath';
+//            $this->pass = 'Hiddenroute1';
 //        }
 
         $this->conn = $this->connect();

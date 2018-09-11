@@ -79,7 +79,7 @@ LEFT JOIN location as r1 ON (r.r1 = r1.id)
 LEFT JOIN location as r2 ON(r.r2 = r2.id)
 LEFT JOIN seat_costs as sc ON(sc.bus_id = b.id)
 WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filters
- GROUP BY bid");
+ GROUP BY bus_no");
 
         if($sql->num_rows > 0){
             while($row = $sql->fetch_array(MYSQLI_ASSOC)){

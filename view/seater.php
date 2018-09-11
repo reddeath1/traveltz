@@ -48,10 +48,11 @@ $seatNo = 0;
 
   if(count($seats) > 0){
       foreach ($seats as $seat) {
+          $bid = $seat['bus_id'];
           $sid = $seat['seat_id'];
           $sno = $seat['sno'];
           $cost = $seat['cost'];
-          $seat_count .="<div class=\"col-xs bus-seat\" seat-data='$cost,$sno,$sid'><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
+          $seat_count .="<div class=\"col-xs bus-seat\" seat-data='[$cost,$sno,$sid,$bid]'><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
       }
       $seat_count .="<div class=\"col-xs bus-seat\"><img src=\"$url/view/public/images/icons/seat-available.png\" ></div>";
   }

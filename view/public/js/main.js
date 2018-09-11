@@ -323,12 +323,15 @@ Ttz.URi = function () {
                 $(item).on('click',function(){
 
                     var data = $(this).attr('seat-data'),
-                    d = $().toArray(data,','),
-                    price = d[0],
-                    sno = d[1],
-                    sid = d[2],
+                        data = data.replace('[',''),
+                        data = data.replace(']',''),
+                        d = $().toArray(data,','),
+                        price = d[0],
+                        sno = d[1],
+                        sid = d[2],
+                        bid = d[3],
                         seat=  $('.seat-no').text(),
-                    pr = $('.price').text();
+                        pr = $('.price').text();
 
                     if($(c).src() !== _T.URi()+'view/public/images/icons/seat-selected.png'){
                         $(c).src(_T.URi()+'view/public/images/icons/seat-selected.png');
@@ -340,7 +343,6 @@ Ttz.URi = function () {
                         }else{
                             seat = sno;
                             price =  price;
-
                         }
 
                     }else{
@@ -349,15 +351,17 @@ Ttz.URi = function () {
 
                         if(seat !== ''){
                             seat = seat.replace(','+sno,'');
-                            price = price.replace('+'+price,'');
 
                         }
+
+                        var p = $('.price').text();
+                        price = p.replace('+ '+price,'');
 
                     }
 
                     var l = $().length('.selected');
 
-                    $('.selected-seat').html("("+l+")");
+                    $('.selected-seat').text("("+l+")");
                     $('.seat-no').text(seat);
                     $('.price').text(price);
 
@@ -372,12 +376,17 @@ Ttz.URi = function () {
                     $('.total-price').text(prr);
 
                     setTimeout(function(){
-                        if($('.seat-no').text() === '(0)'){
+                        var n = $('.selected-seat').text().replace(/\D/g, '');
+                        n = parseInt(n);
+                        if(n === 0){
                             $('.total-price').text(' ');
+                            $('.seat-no').text(' ');
+                            $('.price').text(' ');
+                            prr = 0;
+                            price = 0;
+                            seat = 0;
                         }
                     },100);
-
-
                 });
             }
         });
