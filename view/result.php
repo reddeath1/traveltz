@@ -13,6 +13,8 @@ $default_tos = @$locations->getLocations("id='$default_to'")[0];
 $default_to_name = @$default_tos['name'];
 $default_to_id = $default_tos['id'];
 
+
+
 if($default_to === $default_to_id)
 {
     $default_to = "<option value='$default_to_id' selected>$default_to_name</option>";
@@ -83,13 +85,7 @@ if($default_from === $default_from_id)
                     </a>
                     <div class="collapse" id="collapseExample">
                         <div class="accordion-1">
-							<span class="badge badge-secondary">
-								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-									<label class="form-check-label" for="inlineCheckbox1">KLM EXP</label>
-								</div>
-								<span class="badge badge-light">4</span>
-							</span>
+
                             <span class="badge badge-secondary">
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">

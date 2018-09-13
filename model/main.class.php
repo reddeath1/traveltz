@@ -92,6 +92,33 @@ WHERE  date(r.dep_date) >= '$d' AND r.r1 = '$from' AND r.r2 = '$to' $filters
         return $data;
     }
 
+    public function get_company(){
+        $data = array();
+
+        $sql = $this->conn->query("SELECT * FROM company ORDER BY name");
+
+
+        if($sql->num_rows > 0){
+            while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+        }
+        return $data;
+    }
+
+    public function count_companies($id,$r1,$r2){
+        $data = 0;
+        $sql = $this->conn->query("SELECT COUNT(c.id) as cp FROM company as c LEFT JOIN routes as r ON(r.bus_id = c.id) WHERE c.id='$id' AND r.r1 = '$r1' AND r.r2 = '$r2'");
+
+        if($sql->num_rows > 0){
+            while($row = $sql->fetch_array(MYSQLI_ASSOC)){
+                $data = $row['cp'];
+            }
+        }
+
+        return $data;
+    }
+
     public function get_av_seats($bid){
 
         $data = 0;

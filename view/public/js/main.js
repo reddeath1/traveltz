@@ -81,7 +81,6 @@ Ttz.getAvailabilityResults = function(filter) {
                     item.checked = true;
                     filt += v + ',';
                 });
-
             }
 
             if($$('.sorts').element !== null && $$('.sorts').isNotEmpty()){
@@ -115,6 +114,9 @@ Ttz.getAvailabilityResults = function(filter) {
                 var r = $$().http.data(this);
 
             if (typeof r !== 'undefined') {
+                if(r.default_company !== ''){
+                    $$('.accordion-1').html(r.default_company);
+                }
 
                 (typeof r.data !== 'undefined')
                     ?
@@ -304,7 +306,6 @@ Ttz.URi = function () {
     if(!$('.collapse-btn').isNull()){
         $('.elapsed').countDown();
     }
-
 
     if(!$('.seats').isNull()){
         var last = document.getElementsByClassName('bus-seat').length -1;

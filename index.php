@@ -10,6 +10,7 @@
 
 
 include_once (__DIR__ . '/controller/Locations.php');
+include_once (__DIR__ . '/controller/company.php');
 
 
 class Index {
