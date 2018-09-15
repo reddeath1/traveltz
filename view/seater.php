@@ -21,7 +21,7 @@ $seatNo = 0;
           $bno = $item['bus_no'];
           $logo = $item['logo'];
 
-          $date = date("d m Y",strtotime($dates));
+          $date = date("d-m-Y",strtotime($dates));
           $e_time = date("M d, Y H:i:s",strtotime($dates));
           $time = date('H:i A',strtotime($time));
 
