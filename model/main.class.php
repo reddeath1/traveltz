@@ -72,7 +72,7 @@ class Main extends connection {
         }
 
 
-        $sql = $this->conn->query("SELECT b.*,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b 
+        $sql = $this->conn->query("SELECT b.*,co.id as cp_id,b.id as bid,CONCAT(r1.name,'-',r2.name) as route,r.dep_date,MIN(sc.cost) as price,co.name as company,co.logo FROM bus as b 
 LEFT JOIN company as co ON(b.co_id = co.id)
 LEFT JOIN routes as r ON(r.bus_id = b.id) 
 LEFT JOIN location as r1 ON (r.r1 = r1.id)

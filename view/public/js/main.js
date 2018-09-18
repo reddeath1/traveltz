@@ -157,6 +157,19 @@ Ttz.URi = function () {
 
 };
 
+Ttz.getCompanies = function () {
+    if ($$('.cp_f').element !== null){
+        $$().each('.cp_f',function (item,index) {
+            console.log(index);
+            $$(item).on('change',function () {
+                if (this.checked){
+                    alert(this.value)
+                }
+            });
+        })
+    }
+};
+
 /**
  * This is a brain of this software
  */
@@ -301,7 +314,8 @@ Ttz.URi = function () {
             if(this.value !== ''){
                 _T.getAvailabilityResults();
             }
-        });
+        })
+
 
     if(!$('.collapse-btn').isNull()){
         $('.elapsed').countDown();
@@ -394,5 +408,11 @@ Ttz.URi = function () {
 
 
     }
+
+    document.addEventListener('ready',function () {
+        setTimeout(function () {
+            Ttz.getCompanies()
+        },3000);
+    })
 
 })($$,http,Ttz);
